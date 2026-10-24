@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SB Waschpark Oberkirch &ndash; Ihre SB-Autowaschanlage</title>
+
+  <meta name="description" content="SB Waschpark Oberkirch &ndash; Selbstbedienung t&auml;glich von 7 bis 22 Uhr: Hochdruckw&auml;sche, Unterbodenpflege, Power-Wachs, SB-Sauger und mehr. Tel: +49 7802 7007807" />
+
+  <!-- Google Fonts: Barlow Condensed + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#start" class="logo" aria-label="SB Waschpark Oberkirch &ndash; nach oben">
+        <img class="logo__icon" src="assets/images/logo-real.png" alt="SB Waschpark Oberkirch Logo" style="width:auto;height:36px;" />
+        <span class="logo__text">
+          <span class="logo__sub">Autowaschanlage &middot; Oberkirch</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Men&uuml; &ouml;ffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Leistungen</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Waschprogramme</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">&Uuml;ber uns</a></li>
+          <li class="main-nav__item"><a href="#aktuelles">Tipps</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <a href="#kontakt" class="btn btn--primary">Anfahrt &amp; Kontakt</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- 1. HERO -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <img
+          src="assets/images/hero-waschplatz.jpg"
+          alt="Echter SB Waschpark Oberkirch – Waschboxen mit Willkommens-Banner"
+          width="1300" height="400"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="hero__tag">SB-Autowaschanlage in Oberkirch</span>
+        <h1 class="hero__title">
+          Ihr Auto &ndash;<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero__lead">
+          Der SB Waschpark Oberkirch bietet Ihnen modernste Selbstbedienungs-Waschpl&auml;tze
+          t&auml;glich von 7 bis 22 Uhr. Von der Hochdruckw&auml;sche bis zur Innenreinigung &ndash;
+          alles f&uuml;r ein strahlendes Fahrzeug zum fairen Preis.
+        </p>
+        <div class="hero__actions">
+          <a href="#leistungen" class="btn btn--primary btn--lg">Unsere Leistungen</a>
+          <a href="#kontakt" class="btn btn--outline-white btn--lg">Anfahrt</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#061529;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F5F8FC"/></svg></div>
+
+    <!-- 2. LEISTUNGEN -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Selbstbedienung leicht gemacht</span>
+          <h2 class="section__title">Unsere Leistungen</h2>
+          <p class="section__lead">
+            Vom Hochdruckjet bis zum Innenreiniger &ndash; beim SB Waschpark Oberkirch
+            haben Sie alles in einer Hand. Flexibel, g&uuml;nstig und t&auml;glich von 7 bis 22 Uhr verf&uuml;gbar.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <!-- LEISTUNG 1: SB-Hochdruckwaschplatz -->
+          <div class="service-detail-card" id="hochdruck">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/leistung-hochdruck.jpg"
+                alt="Hochdruckreiniger entfernt Schmutz vom Fahrzeug"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Wassertropfen/Strahl -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 4C18 4 8 14 8 22a10 10 0 0020 0C28 14 18 4 18 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M13 23a6 6 0 005 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <span class="service-detail-card__tag">Hochdruck &amp; Schaum</span>
+              <h3 class="service-detail-card__title">SB-Hochdruckwaschplatz &ndash; Power f&uuml;r jede Verschmutzung</h3>
+              <p class="service-detail-card__text">
+                Mit unseren leistungsstarken Hochdruck-Lanzen und dem speziellen Power-Schaum
+                l&ouml;sen Sie hartn&auml;ckigen Schmutz, Insektenreste und Stra&szlig;enbelag m&uuml;helos.
+                Der Freiwaschplatz mit begehbarem Steg erm&ouml;glicht komfortables Arbeiten
+                rund ums Fahrzeug.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Anfahrt</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 2: Unterbodenwäsche & Felgenreinigung -->
+          <div class="service-detail-card" id="unterboden">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/leistung-unterboden-felgen.jpg"
+                alt="Felgenreinigung mit Hochdruck in Nahaufnahme"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Auto -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 20l3-8h20l3 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <rect x="3" y="20" width="30" height="8" rx="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="10" cy="30" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                  <circle cx="26" cy="30" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M8 16l2-5h16l2 5" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">Unterboden &amp; Felgen</span>
+              <h3 class="service-detail-card__title">Unterbodenw&auml;sche &amp; Power-Felgenreinigung</h3>
+              <p class="service-detail-card__text">
+                Schutz f&uuml;r Ihr Fahrzeug von unten: Die Unterbodenw&auml;sche entfernt
+                Salz, Schlamm und Stra&szlig;enschmutz, die Power-Felgenreinigung bringt
+                Ihre R&auml;der wieder zum Gl&auml;nzen &ndash; ganz ohne aggressives
+                Schrubben, schonend und effektiv.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Anfahrt</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 3: Wachs & Pflege -->
+          <div class="service-detail-card" id="wachspflege">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/leistung-wachs.jpg"
+                alt="Wassertropfen auf frisch gewachstem Lack"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Stern/Glanz -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 5l3.1 6.3L28 12.5l-5 4.9 1.2 6.9-6.2-3.3-6.2 3.3L13 17.4l-5-4.9 6.9-1.2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M4 4l2 2M30 4l-2 2M4 32l2-2M30 32l-2-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">Wachs &amp; Lackschutz</span>
+              <h3 class="service-detail-card__title">Power-Wachs &amp; Top-Pflege &ndash; Glanz, der h&auml;lt</h3>
+              <p class="service-detail-card__text">
+                Schützen Sie den Lack Ihres Fahrzeugs dauerhaft: Power-Wachs versiegelt
+                die Oberfl&auml;che, Spezial-Wachs sorgt f&uuml;r strahlenden Hochglanz
+                und die Top-Pflege gibt Ihrem Auto das gewisse Extra. Einfach zu bedienen,
+                professionelles Ergebnis.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Anfahrt</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 4: Innenreinigung & SB-Sauger -->
+          <div class="service-detail-card" id="innenreinigung">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/leistung-innenreinigung.jpg"
+                alt="Innenraum-Reinigung mit dem SB-Sauger"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Sauger/Innenraum -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 30l6-14h12l6 14" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M12 16V10a6 6 0 1112 0v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="18" y1="4" x2="18" y2="10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Innenreinigung</span>
+              <h3 class="service-detail-card__title">SB-Sauger, Matten &amp; Aireffect &ndash; sauber von innen</h3>
+              <p class="service-detail-card__text">
+                F&uuml;r einen gepflegten Innenraum: leistungsstarke SB-Sauger, ein
+                Mattenklopfer und Mattenreinigungsanlage sowie der Aireffect-Geruchsneutralisierer
+                sorgen daf&uuml;r, dass Ihr Auto nicht nur au&szlig;en, sondern auch
+                innen strahlt. Zus&auml;tzlich: T&uuml;cherautomat und Helmhalter.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Anfahrt</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F5F8FC;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#E8F0FA"/></svg></div>
+
+    <!-- 3. WASCHPROGRAMME / REFERENZEN -->
+    <section class="section section--alt" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">F&uuml;r jedes Fahrzeug das Richtige</span>
+          <h2 class="section__title">Unsere Waschprogramme</h2>
+          <p class="section__lead">
+            Von der schnellen Schmutzentfernung bis zur Komplett-Pflege &ndash;
+            w&auml;hlen Sie das Programm, das zu Ihrem Fahrzeug und Ihrem Budget passt.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-item">
+            <img src="assets/images/programm-hochdruck-basis.jpg"
+              alt="Basiswaschgang Hochdruck"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Hochdruck-Basis</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/programm-schaum-unterboden.jpg"
+              alt="Schaum und Unterboden"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Schaum &amp; Unterboden</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/programm-felgen-power.jpg"
+              alt="Felgen-Power Programm"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Felgen-Power</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/programm-power-wachs.jpg"
+              alt="Power-Wachs Lackschutz"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Power-Wachs</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/programm-innenreinigung-sauger.jpg"
+              alt="SB Innenreinigung Sauger"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Innenreinigung &amp; Sauger</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/programm-komplett-pflege.jpg"
+              alt="Komplett Paket Top-Pflege"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Komplett-Pflege</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#E8F0FA;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F5F8FC"/></svg></div>
+
+    <!-- 4. ÜBER UNS -->
+    <section class="section" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <h2 class="section__title">&Uuml;ber uns</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Unser Waschpark</span>
+            <h3 class="about-content__title">SB Waschpark Oberkirch &ndash; Profip&shy;flege in Selbstbedienung</h3>
+            <p class="about-content__text">
+              Der SB Waschpark Oberkirch steht f&uuml;r Fahrzeugpflege, die wirklich
+              &uuml;berzeugt. Unsere modernen Waschpl&auml;tze sind mit professioneller
+              Technik ausgestattet, die auch Handwaschanlage und Werkstatten verwenden &ndash;
+              jetzt f&uuml;r jeden Autofahrer zug&auml;nglich.
+            </p>
+            <p class="about-content__text">
+              Ob schnelle Reinigung zwischendurch oder gro&szlig;e Komplett-Wäsche mit
+              Felgenpflege, Wachs und Innenreinigung: Bei uns finden Sie alles, was Ihr
+              Fahrzeug braucht. Kein Warten, keine Termine, kein Stress &ndash; einfach
+              vorfahren und loslegen.
+            </p>
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                T&auml;glich ge&ouml;ffnet &ndash; Montag bis Samstag von 7 bis 22 Uhr
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                4 Waschboxen &amp; 1 Freiwaschplatz, dazu 4 SB-Sauger
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Freiwaschplatz mit begehbarem Steg f&uuml;r maximalen Komfort
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="assets/images/hero-waschplatz.jpg"
+              alt="Echter SB Waschpark Oberkirch – Ansicht der Waschboxen"
+              width="1300" height="400" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen -->
+    <div class="stats-bar" aria-label="Unsere Kennzahlen">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="14" data-target="22" data-prefix="7&ndash;" data-suffix=" Uhr">7&ndash;22 Uhr</div>
+            <div class="stat-item__label">t&auml;glich ge&ouml;ffnet (Mo&ndash;Sa)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="5">5</div>
+            <div class="stat-item__label">Waschpl&auml;tze (4 Boxen + Freiwaschplatz)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="12" data-suffix="+">12+</div>
+            <div class="stat-item__label">Waschprogramme</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider" style="background:#0B2E5F;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F5F8FC"/></svg></div>
+
+    <!-- 5. TIPPS / AKTUELLES -->
+    <section class="section" id="aktuelles">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Ratgeber &amp; Tipps</span>
+          <h2 class="section__title">Pflegetipps f&uuml;r Ihr Fahrzeug</h2>
+          <p class="section__lead">
+            Wann waschen, wie w&auml;chsen, was beachten? Unsere Tipps helfen Ihnen,
+            das Beste aus dem Waschpark herauszuholen.
+          </p>
+        </div>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/images/tipp-winter-unterboden.jpg"
+                alt="Auto nach dem Winter reinigen"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__cat">Tipp</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Nach dem Winter: So sch&uuml;tzen Sie Ihren Unterboden</a></h3>
+              <p class="news-card__text">
+                Salz und Streusplit setzen dem Unterboden zu. Eine gr&uuml;ndliche Unterbodenw&auml;sche
+                im Fr&uuml;hjahr entfernt Korrosionsk&shy;eime und sch&uuml;tzt vor Rost &ndash;
+                besonders wichtig nach harten Wintern.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/images/tipp-wachs-lackschutz.jpg"
+                alt="Wachsen und Lackschutz richtig anwenden"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__cat">Tipp</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Wachs: Warum regelm&auml;&szlig;iger Lackschutz so wichtig ist</a></h3>
+              <p class="news-card__text">
+                Ein frisch gew&auml;chstes Auto ist nicht nur sch&ouml;ner &ndash; der Schutzfilm
+                h&auml;lt Wasser, Vogelkot und UV-Strahlung vom Lack fern. Einmal im
+                Quartal w&auml;chsen spart auf Dauer teure Lackarbeiten.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/images/tipp-felgen-bremsstaub.jpg"
+                alt="Felgen reinigen Tipps"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__cat">Tipp</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Saubere Felgen: So werden Bremsstaub und Schmutz entfernt</a></h3>
+              <p class="news-card__text">
+                Bremsstaub ist aggressiv und greift Felgen an. Mit unserem Power-Felgenreiniger
+                l&ouml;sen Sie eingebrannten Belag effektiv und schonend &ndash;
+                ganz ohne aggressives Schrubben.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. KONTAKT -->
+    <section class="section contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Finden Sie uns</span>
+          <h2 class="section__title">Anfahrt &amp; Kontakt</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- TODO: Formspree-Endpunkt einbauen -->
+          <form class="contact-form" id="kontaktformular" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">Ihr Name <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+              <input class="form-control" type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="07802 &hellip;" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachricht">Ihre Nachricht <span aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="nachricht" name="nachricht" required placeholder="Ihre Frage oder Anmerkung &hellip;"></textarea>
+            </div>
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+              Mit dem Absenden stimmen Sie unserer
+              <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerkl&auml;rung</a> zu.
+            </p>
+            <button type="submit" class="btn btn--primary btn--lg">Nachricht absenden</button>
+          </form>
+
+          <div class="contact-info">
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Adresse</h3>
+                <address class="contact-info-card__text">
+                  SB Waschpark Oberkirch<br>
+                  Appenweierer Stra&szlig;e 53<br>
+                  77704 Oberkirch<br>
+                  <span style="font-size:0.8rem;color:var(--color-text-muted);">(neben Aldi / gegen&uuml;ber Lidl)</span>
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Telefon</h3>
+                <p class="contact-info-card__text">
+                  <a href="tel:+4978027007807">+49 7802 7007807</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">&Ouml;ffnungszeiten</h3>
+                <dl class="hours-list">
+                  <dt>Mo &ndash; Sa</dt><dd>7:00 &ndash; 22:00 Uhr</dd>
+                  <dt>Sonn- &amp; Feiertag</dt><dd>Geschlossen</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <img src="assets/images/logo-real.png" alt="SB Waschpark Oberkirch Logo" style="width:auto;height:32px;" />
+        </div>
+        <p class="footer-brand__desc">
+          SB Waschpark Oberkirch &ndash; Ihre moderne Selbstbedienungs-Waschanlage.
+          T&auml;glich lange ge&ouml;ffnet, professionelle Technik, faire Preise.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#referenzen">Waschprogramme</a></li>
+            <li><a href="#ueber-uns">&Uuml;ber uns</a></li>
+            <li><a href="#aktuelles">Pflegetipps</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Appenweierer Stra&szlig;e 53<br>77704 Oberkirch</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <a href="tel:+4978027007807">+49 7802 7007807</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">&Ouml;ffnungszeiten</h3>
+        <dl class="footer-hours">
+          <dt>Mo &ndash; Sa</dt><dd>7:00 &ndash; 22:00 Uhr</dd>
+          <dt>Sonn- &amp; Feiertag</dt><dd>Geschlossen</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; 2026 SB Waschpark Oberkirch. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

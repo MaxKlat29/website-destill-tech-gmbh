@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEITENTITEL HIER ANPASSEN -->
+  <title>Malerbetrieb Muster – Termin einfach online buchen</title>
+
+  <!-- META-BESCHREIBUNG HIER ANPASSEN (max. 160 Zeichen) -->
+  <meta name="description" content="Malerbetrieb Muster in Musterstadt – Innen- und Außenarbeiten, Tapezieren, Bodenbeläge. Termin bequem online buchen – ohne Warteschleife." />
+
+  <!-- FAVICON HIER EINBINDEN -->
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" /> -->
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll-Fortschrittsbalken -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       FIRMENNAME, INITIALEN und MENÜPUNKTE HIER ANPASSEN.
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- LOGO: INITIALEN & FIRMENNAME HIER ANPASSEN -->
+      <a href="#start" class="logo" aria-label="Malerbetrieb Muster – nach oben">
+        <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="8" fill="#5C3D2E"/>
+          <!-- INITIALEN HIER ANPASSEN (z. B. "SW" für Schreinerei Wagner) -->
+          <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#F3EAD8">MM</text>
+        </svg>
+        <span class="logo__text">
+          <!-- FIRMENNAME HIER ANPASSEN -->
+          <span class="logo__name">Malerbetrieb Muster</span>
+          <!-- SLOGAN / GRÜNDUNGSJAHR HIER ANPASSEN -->
+          <span class="logo__sub">GmbH &middot; seit 1998</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <!-- MENÜPUNKTE HIER ANPASSEN -->
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Leistungen</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Referenzen</a></li>
+          <li class="main-nav__item"><a href="#bewertungen">Bewertungen</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">Über uns</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <!-- PRIMÄRE CTA: BUCHUNGS-LINK -->
+          <a href="#buchen" class="btn btn--primary">Termin buchen</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- ============================================================
+         1. HERO
+         BILD, ÜBERSCHRIFT UND BUTTONS HIER ANPASSEN.
+         ============================================================ -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <!-- HERO-BILD HIER AUSTAUSCHEN (min. 1600 × 900 px) -->
+        <img
+          src="https://picsum.photos/seed/maler-hero/1600/900"
+          alt="Malermeister bei der Arbeit an der Fassade"
+          width="1600" height="900"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <!-- SCHLAGWORT HIER ANPASSEN -->
+        <span class="hero__tag">Termin einfach online buchen</span>
+        <!-- HAUPTÜBERSCHRIFT HIER ANPASSEN -->
+        <!-- TYPEWRITER-PHRASEN IN js/main.js ANPASSEN -->
+        <h1 class="hero__title">
+          Ihr Maler –<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <!-- HERO-TEXT HIER ANPASSEN -->
+        <p class="hero__lead">
+          Als familiengeführter Malerbetrieb mit über 25 Jahren Erfahrung bringen wir Farbe,
+          Qualität und Zuverlässigkeit in jedes Projekt – und das bequem buchbar,
+          ganz ohne Warteschleife.
+        </p>
+        <div class="hero__actions">
+          <!-- BUTTONS HIER ANPASSEN -->
+          <a href="#buchen" class="btn btn--primary btn--lg">Jetzt Termin buchen</a>
+          <a href="#leistungen" class="btn btn--outline-white btn--lg">Unsere Leistungen</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#2C1A0E;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FDFAF6"/></svg></div>
+
+    <!-- ============================================================
+         2. LEISTUNGEN
+         SVG-ICONS, TITEL UND TEXTE DER 4 KARTEN HIER ANPASSEN.
+         TIPP: data-service muss mit den service-option[data-service]
+         Werten im Buchungsblock übereinstimmen (dann springt Klick
+         auf „Jetzt anfragen" direkt zum vorausgefüllten Buchungsblock).
+         ============================================================ -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG, TITEL UND BESCHREIBUNG HIER ANPASSEN -->
+          <span class="section__tag">Was wir für Sie leisten</span>
+          <h2 class="section__title">Unsere Leistungen</h2>
+          <p class="section__lead">
+            Von der ersten Farbberatung bis zur finalen Abnahme – wir begleiten
+            Ihr Projekt vollständig und zuverlässig.
+          </p>
+        </div>
+
+        <!-- 4 LEISTUNGSKARTEN -->
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <!-- LEISTUNG 1 HIER ANPASSEN -->
+          <div class="service-detail-card" id="innenrenovierung">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 1 HIER AUSTAUSCHEN (800 × 500 px) -->
+              <img class="service-detail-card__image"
+                src="https://picsum.photos/seed/maler-innen/800/500"
+                alt="Frisch gestrichene Wände in einem modernen Wohnzimmer"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Malerrolle -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="6" width="22" height="12" rx="3" stroke="currentColor" stroke-width="2.2"/>
+                  <path d="M26 12h4v5a2 2 0 01-2 2h0a2 2 0 01-2-2v-5z" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="15" y1="18" x2="15" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                  <rect x="10" y="28" width="10" height="4" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <!-- KATEGORIE, TITEL UND TEXT HIER ANPASSEN -->
+              <span class="service-detail-card__tag">Innenrenovierung</span>
+              <h3 class="service-detail-card__title">Innenanstrich – frisch, sauber, wohnlich</h3>
+              <p class="service-detail-card__text">
+                Wände, Decken und Türen professionell streichen und renovieren. Wir beraten Sie
+                bei der Farbauswahl, bereiten Untergründe sorgfältig vor und sorgen für ein
+                sauberes, gleichmäßiges Ergebnis – auch in bewohnten Räumen.
+              </p>
+              <!-- data-service muss mit Buchungsblock übereinstimmen -->
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="innenrenovierung">Termin buchen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 2 HIER ANPASSEN -->
+          <div class="service-detail-card" id="aussenanstrich">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 2 HIER AUSTAUSCHEN -->
+              <img class="service-detail-card__image"
+                src="https://picsum.photos/seed/maler-fassade/800/500"
+                alt="Malermeister bei der Fassadenrenovierung eines Wohnhauses"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Haus mit Pinsel -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15L18 5l14 10v16H4V15z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                  <path d="M26 10l4 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <rect x="13" y="23" width="10" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="18" y1="23" x2="18" y2="31" stroke="currentColor" stroke-width="1.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">Außenanstrich</span>
+              <!-- TITEL UND TEXT HIER ANPASSEN -->
+              <h3 class="service-detail-card__title">Fassade & Außen – Schutz und Optik in einem</h3>
+              <p class="service-detail-card__text">
+                Fassaden, Fensterrahmen, Holzverkleidungen und Garagentore dauerhaft und
+                witterungsbeständig streichen. Wir wählen für Sie das passende System –
+                von klassischen Dispersionsfarben bis zu atmungsaktiven Silikatfarben.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="aussenanstrich">Termin buchen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 3 HIER ANPASSEN -->
+          <div class="service-detail-card" id="tapezierarbeiten">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 3 HIER AUSTAUSCHEN -->
+              <img class="service-detail-card__image"
+                src="https://picsum.photos/seed/maler-tapete/800/500"
+                alt="Handwerker beim Tapezieren mit strukturierter Tapete"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Tapete / Muster -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="28" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="4" y1="13" x2="32" y2="13" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                  <line x1="4" y1="23" x2="32" y2="23" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                  <line x1="13" y1="4" x2="13" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                  <line x1="23" y1="4" x2="23" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">Tapezierarbeiten</span>
+              <!-- TITEL UND TEXT HIER ANPASSEN -->
+              <h3 class="service-detail-card__title">Tapezieren – Struktur & Charakter für jeden Raum</h3>
+              <p class="service-detail-card__text">
+                Vliestapeten, Strukturtapeten oder edle Papiertapeten – wir verarbeiten alle
+                Materialien blasenfrei und passgenau. Untergrund vorbereiten, Ecken sauber
+                abschneiden, Muster exakt ausrichten: das ist unsere Handschrift.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="tapezierarbeiten">Termin buchen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 4 HIER ANPASSEN -->
+          <div class="service-detail-card" id="bodenbelaege">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 4 HIER AUSTAUSCHEN -->
+              <img class="service-detail-card__image"
+                src="https://picsum.photos/seed/maler-boden/800/500"
+                alt="Verlegung von Laminat und Vinylboden"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Boden / Fliesen -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="18" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                  <rect x="20" y="18" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                  <rect x="4" y="8" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                  <rect x="20" y="8" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="4" y1="30" x2="32" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Bodenbeläge</span>
+              <!-- TITEL UND TEXT HIER ANPASSEN -->
+              <h3 class="service-detail-card__title">Bodenbeläge – Vorbereitung, Verlegung, Fertigstellung</h3>
+              <p class="service-detail-card__text">
+                Laminat, Vinyl, Parkett oder PVC – wir verlegen sauber, schnell und passgenau.
+                Von der Untergrundprüfung über Ausgleichsmaßnahmen bis zur abschließenden
+                Sockelleiste: alles aus einer Hand, termingerecht abgestimmt.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="bodenbelaege">Termin buchen</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FDFAF6;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F3EAD8"/></svg></div>
+
+    <!-- ============================================================
+         3. BUCHUNGS-BLOCK (NEU)
+         3-stufiger Wizard: Leistung → Datum & Uhrzeit → Kontaktdaten
+         LEISTUNGEN, ZEITEN UND FORMULAR-BACKEND IN js/main.js ANPASSEN.
+         ============================================================ -->
+    <section class="section section--alt booking-section" id="buchen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG, TITEL UND BESCHREIBUNG HIER ANPASSEN -->
+          <span class="section__tag">Schnell &amp; unkompliziert</span>
+          <h2 class="section__title">Termin online buchen</h2>
+          <p class="section__lead">
+            Leistung wählen, freien Termin sichern, Daten eingeben –
+            wir bestätigen innerhalb von 24 Stunden.
+          </p>
+        </div>
+
+        <!-- Buchungs-Wizard-Karte -->
+        <div class="booking-card" role="form" aria-label="Terminbuchung">
+
+          <!-- Fortschrittsanzeige -->
+          <div class="booking-progress" aria-label="Buchungsfortschritt" role="list">
+            <div class="booking-step is-active" role="listitem" aria-current="step">
+              <span class="booking-step__num" aria-hidden="true">1</span>
+              <span class="booking-step__label">Leistung</span>
+            </div>
+            <div class="booking-progress__line" aria-hidden="true"></div>
+            <div class="booking-step" role="listitem">
+              <span class="booking-step__num" aria-hidden="true">2</span>
+              <span class="booking-step__label">Termin</span>
+            </div>
+            <div class="booking-progress__line" aria-hidden="true"></div>
+            <div class="booking-step" role="listitem">
+              <span class="booking-step__num" aria-hidden="true">3</span>
+              <span class="booking-step__label">Ihre Daten</span>
+            </div>
+          </div>
+
+          <!-- ── SCHRITT 1: Leistung wählen ── -->
+          <div class="booking-panel" id="booking-panel-1">
+            <h3 class="booking-panel__title">Welche Leistung benötigen Sie?</h3>
+
+            <!-- BUCHUNGS-LEISTUNGEN HIER ANPASSEN.
+                 data-service = eindeutiger ID-Schlüssel (entspricht data-preselectservice oben)
+                 data-label   = Anzeigename in der Zusammenfassung
+                 data-duration = Dauer-Hinweis für den Kunden -->
+            <div class="service-select-grid" role="group" aria-labelledby="step1-heading" id="service-select-grid">
+
+              <!-- BUCHUNGS-LEISTUNG 1 HIER ANPASSEN -->
+              <button type="button" class="service-option"
+                data-service="innenrenovierung"
+                data-label="Innenrenovierung"
+                data-duration="ca. 1 Tag">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="6" width="22" height="12" rx="3" stroke="currentColor" stroke-width="2.2"/>
+                    <path d="M26 12h4v5a2 2 0 01-2 2h0a2 2 0 01-2-2v-5z" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="15" y1="18" x2="15" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                    <rect x="10" y="28" width="10" height="4" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Innenrenovierung</span>
+                <span class="service-option__meta">Wände, Decken & Türen · ca. 1 Tag</span>
+              </button>
+
+              <!-- BUCHUNGS-LEISTUNG 2 HIER ANPASSEN -->
+              <button type="button" class="service-option"
+                data-service="aussenanstrich"
+                data-label="Außenanstrich"
+                data-duration="ca. 2–3 Tage">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 15L18 5l14 10v16H4V15z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                    <path d="M26 10l4 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <rect x="13" y="23" width="10" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="18" y1="23" x2="18" y2="31" stroke="currentColor" stroke-width="1.4"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Außenanstrich</span>
+                <span class="service-option__meta">Fassade, Fensterrahmen · ca. 2–3 Tage</span>
+              </button>
+
+              <!-- BUCHUNGS-LEISTUNG 3 HIER ANPASSEN -->
+              <button type="button" class="service-option"
+                data-service="tapezierarbeiten"
+                data-label="Tapezierarbeiten"
+                data-duration="ca. 1–2 Tage">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4" width="28" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4" y1="13" x2="32" y2="13" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                    <line x1="4" y1="23" x2="32" y2="23" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                    <line x1="13" y1="4" x2="13" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                    <line x1="23" y1="4" x2="23" y2="32" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Tapezierarbeiten</span>
+                <span class="service-option__meta">Vlies, Struktur, Papier · ca. 1–2 Tage</span>
+              </button>
+
+              <!-- BUCHUNGS-LEISTUNG 4 HIER ANPASSEN -->
+              <button type="button" class="service-option"
+                data-service="bodenbelaege"
+                data-label="Bodenbeläge"
+                data-duration="ab 1 Tag">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="18" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                    <rect x="20" y="18" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                    <rect x="4" y="8" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                    <rect x="20" y="8" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="4" y1="30" x2="32" y2="30" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Bodenbeläge</span>
+                <span class="service-option__meta">Laminat, Vinyl, Parkett · ab 1 Tag</span>
+              </button>
+
+            </div>
+
+            <p class="booking-error" id="error-step1" role="alert" hidden>Bitte wählen Sie eine Leistung aus.</p>
+
+            <div class="booking-nav booking-nav--right">
+              <button type="button" class="btn btn--primary btn--lg" id="step1-next">
+                Weiter
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ── SCHRITT 2: Datum & Uhrzeit ── -->
+          <div class="booking-panel" id="booking-panel-2" hidden>
+            <h3 class="booking-panel__title">Wann soll es losgehen?</h3>
+
+            <div class="datetime-grid">
+
+              <!-- Datums-Auswahl -->
+              <div class="datetime-col">
+                <label class="form-label" for="booking-date">Datum wählen</label>
+                <!-- DATUM-INPUT: min wird per JS auf heute gesetzt -->
+                <input class="form-control booking-date-input" type="date" id="booking-date" required />
+                <p class="booking-hint" style="margin-top:0.5rem;">
+                  Montag – Freitag · Samstag auf Anfrage
+                </p>
+              </div>
+
+              <!-- Zeit-Slots -->
+              <div class="datetime-col">
+                <p class="form-label" id="time-slots-label">Uhrzeit wählen</p>
+
+                <!-- ZEITEN HIER ANPASSEN.
+                     is-booked + disabled = bereits vergeben (z. B. per Backend befüllen)
+                     Für Backend-Integration: Slots per fetch() laden und
+                     HTML dynamisch generieren – Kommentar in js/main.js. -->
+                <div class="time-slots" role="group" aria-labelledby="time-slots-label" id="time-slots">
+                  <button type="button" class="time-slot" data-time="08:00">08:00</button>
+                  <button type="button" class="time-slot" data-time="09:00">09:00</button>
+                  <!-- is-booked zeigt "vergeben" an – per Backend befüllen -->
+                  <button type="button" class="time-slot is-booked" data-time="10:00" disabled aria-label="10:00 Uhr – bereits vergeben">10:00</button>
+                  <button type="button" class="time-slot" data-time="11:00">11:00</button>
+                  <!-- MITTAGSPAUSE HIER ANPASSEN ODER ENTFERNEN -->
+                  <button type="button" class="time-slot is-break" data-time="12:00" disabled aria-label="12:00 Uhr – Mittagspause">12:00</button>
+                  <button type="button" class="time-slot" data-time="13:00">13:00</button>
+                  <button type="button" class="time-slot is-booked" data-time="14:00" disabled aria-label="14:00 Uhr – bereits vergeben">14:00</button>
+                  <button type="button" class="time-slot" data-time="15:00">15:00</button>
+                  <button type="button" class="time-slot" data-time="16:00">16:00</button>
+                </div>
+
+                <!-- Legende -->
+                <div class="time-legend">
+                  <span class="time-legend__item"><span class="time-legend__dot time-legend__dot--free"></span>Frei</span>
+                  <span class="time-legend__item"><span class="time-legend__dot time-legend__dot--booked"></span>Vergeben</span>
+                </div>
+              </div>
+
+            </div>
+
+            <p class="booking-error" id="error-step2" role="alert" hidden>Bitte wählen Sie Datum und Uhrzeit.</p>
+
+            <div class="booking-nav">
+              <button type="button" class="btn btn--outline" id="step2-back">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                Zurück
+              </button>
+              <button type="button" class="btn btn--primary btn--lg" id="step2-next">
+                Weiter
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ── SCHRITT 3: Kontaktdaten & Bestätigung ── -->
+          <div class="booking-panel" id="booking-panel-3" hidden>
+            <h3 class="booking-panel__title">Ihre Kontaktdaten</h3>
+
+            <!-- Buchungsübersicht -->
+            <div class="booking-summary" aria-label="Buchungsübersicht">
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Leistung</span>
+                <strong class="booking-summary__val" id="summary-service">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Datum</span>
+                <strong class="booking-summary__val" id="summary-date">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Uhrzeit</span>
+                <strong class="booking-summary__val" id="summary-time">–</strong>
+              </div>
+            </div>
+
+            <!-- Kontaktformular -->
+            <!-- FORMULAR-VERSAND IN js/main.js ANPASSEN (fetch / Formspree) -->
+            <form class="booking-form" id="buchungsformular" novalidate>
+
+              <div class="booking-form__grid">
+                <div class="form-group">
+                  <label class="form-label" for="b-name">Ihr Name <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="text" id="b-name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="b-email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="email" id="b-email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="b-tel">Telefon <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="tel" id="b-tel" name="telefon" required autocomplete="tel" placeholder="089 12 34 56 – 0" />
+                </div>
+                <div class="form-group">
+                  <!-- ADRESSFELD: hilfreich für Terminplanung, aber optional -->
+                  <label class="form-label" for="b-adresse">Adresse des Objekts <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+                  <input class="form-control" type="text" id="b-adresse" name="adresse" autocomplete="street-address" placeholder="Musterstraße 1, 80000 Musterstadt" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="b-nachricht">Anmerkungen <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+                <textarea class="form-control" id="b-nachricht" name="nachricht" placeholder="z. B. Raumgröße, besondere Anforderungen, Zufahrt …" style="min-height:110px;"></textarea>
+              </div>
+
+              <!-- DATENSCHUTZ-LINK HIER ANPASSEN -->
+              <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+                Mit dem Absenden stimmen Sie unserer
+                <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerklärung</a> zu.
+                Wir verwenden Ihre Daten ausschließlich zur Terminbestätigung.
+              </p>
+
+              <p class="booking-error" id="error-step3" role="alert" hidden>Bitte füllen Sie alle Pflichtfelder aus.</p>
+
+              <div class="booking-nav">
+                <button type="button" class="btn btn--outline" id="step3-back">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                  Zurück
+                </button>
+                <button type="submit" class="btn btn--primary btn--lg">
+                  Termin verbindlich buchen
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- ── BESTÄTIGUNGS-ZUSTAND (nach erfolgreicher Buchung) ── -->
+          <div class="booking-panel booking-confirm" id="booking-panel-confirm" hidden>
+            <div class="booking-confirm__icon" aria-hidden="true">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" stroke="var(--color-secondary)" stroke-width="3"/>
+                <path d="M18 28l8 8 12-14" stroke="var(--color-secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="booking-confirm__title">Anfrage erfolgreich gesendet!</h3>
+            <p class="booking-confirm__text">
+              Vielen Dank, <strong id="confirm-name"></strong>. Wir haben Ihre Terminanfrage erhalten
+              und melden uns innerhalb von 24 Stunden per E-Mail oder Telefon zur Bestätigung.
+            </p>
+            <!-- Bestätigungs-Zusammenfassung -->
+            <div class="booking-summary" style="margin:1.5rem 0;" aria-label="Ihre Buchung">
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Leistung</span>
+                <strong class="booking-summary__val" id="confirm-service">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Datum</span>
+                <strong class="booking-summary__val" id="confirm-date">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Uhrzeit</span>
+                <strong class="booking-summary__val" id="confirm-time">–</strong>
+              </div>
+            </div>
+            <button type="button" class="btn btn--outline" id="booking-reset">Weiteren Termin buchen</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F3EAD8;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FDFAF6"/></svg></div>
+
+    <!-- ============================================================
+         4. REFERENZEN
+         BILDER UND BESCHRIFTUNGEN HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG UND TITEL HIER ANPASSEN -->
+          <span class="section__tag">Unsere Arbeit spricht für sich</span>
+          <h2 class="section__title">Ausgewählte Referenzprojekte</h2>
+          <p class="section__lead">
+            Einblicke in Projekte, die wir mit Sorgfalt und Leidenschaft umgesetzt haben.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- REFERENZPROJEKTE 1–6: BILD, ALT-TEXT UND LABEL HIER ANPASSEN -->
+          <div class="project-item">
+            <img src="https://picsum.photos/seed/ref-wohnzimmer/600/450"
+              alt="Renoviertes Wohnzimmer mit neuem Anstrich in warmem Grau"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Wohnzimmer Musterstadt</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://picsum.photos/seed/ref-fassade/600/450"
+              alt="Komplett renovierte Fassade eines Mehrfamilienhauses"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Fassade MFH Parkstraße</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://picsum.photos/seed/ref-buero/600/450"
+              alt="Modernes Büro mit frisch tapezierter Akzentwand"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Bürorenovierung Stadtmitte</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://picsum.photos/seed/ref-boden/600/450"
+              alt="Neu verlegter Eichenparkettboden im Altbau"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Parkett Altbau Seestraße</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://picsum.photos/seed/ref-kinderzimmer/600/450"
+              alt="Farbenfrohes Kinderzimmer mit Akzentfarben"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Kinderzimmer Familie Huber</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://picsum.photos/seed/ref-treppe/600/450"
+              alt="Frisch lackiertes Treppenhaus mit neuer Wandgestaltung"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Treppenhaus Sonnenweg</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FDFAF6;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F3EAD8"/></svg></div>
+
+    <!-- ============================================================
+         5. ÜBER UNS
+         FIRMENGESCHICHTE, KENNZAHLEN UND TEAM HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section section--alt" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <!-- ÜBERSCHRIFT HIER ANPASSEN -->
+          <h2 class="section__title">Über uns</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Unsere Geschichte</span>
+            <!-- FIRMENGESCHICHTE HIER ANPASSEN -->
+            <h3 class="about-content__title">Handwerk, das von Generation zu Generation wächst</h3>
+            <p class="about-content__text">
+              Alles begann 1998 mit einem Pinsel, einem Eimer Farbe und dem Anspruch, Dinge
+              richtig zu machen: Klaus Muster gründete den Betrieb als Einmannunternehmen –
+              mit dem Ziel, Renovierungen so durchzuführen, wie er es von seinem Meister gelernt
+              hatte. Gründlich, sauber und ohne Abstriche bei der Qualität.
+            </p>
+            <p class="about-content__text">
+              Heute beschäftigt Malerbetrieb Muster acht erfahrene Gesellen und Meister.
+              Wir begleiten unsere Kunden von der ersten Farbberatung bis zur finalen Abnahme –
+              pünktlich, transparent und immer mit einem Blick für das Detail.
+            </p>
+            <!-- AUSZEICHNUNGEN / ZERTIFIKATE HIER ANPASSEN -->
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Mitglied der Malerinnung Bayern
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Geprüfter Fachbetrieb für schimmelsichere Beschichtungen
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Ausbildungsbetrieb seit 2004
+              </li>
+            </ul>
+          </div>
+
+          <!-- TEAMFOTO HIER AUSTAUSCHEN (800 × 600 px) -->
+          <div class="about-image">
+            <img
+              src="https://picsum.photos/seed/team-maler/800/600"
+              alt="Das Team des Malerbetriebs Muster vor einem frisch renovierten Haus"
+              width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen-Balken -->
+    <div class="stats-bar" aria-label="Unsere Kennzahlen">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- KENNZAHLEN HIER ANPASSEN -->
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="1990" data-target="1998" data-prefix="seit ">seit 1998</div>
+            <div class="stat-item__label">in Familienhand</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="450" data-suffix="+">450+</div>
+            <div class="stat-item__label">zufriedene Kunden</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="8">8</div>
+            <div class="stat-item__label">engagierte Mitarbeiter</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <section class="section" aria-label="Team">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Die Menschen hinter dem Betrieb</span>
+          <h3 class="section__title">Unser Team</h3>
+        </div>
+        <div class="team-grid">
+
+          <!-- TEAMMITGLIED 1–3 HIER ANPASSEN (Foto 300 × 300 px) -->
+          <div class="team-card">
+            <img class="team-card__photo"
+              src="https://picsum.photos/seed/team-maler-maria/300/300"
+              alt="Porträtfoto von Maria Muster"
+              width="300" height="300" loading="lazy" />
+            <h4 class="team-card__name">Maria Muster</h4>
+            <p class="team-card__role">Geschäftsführerin &amp; Meisterin</p>
+          </div>
+
+          <div class="team-card">
+            <img class="team-card__photo"
+              src="https://picsum.photos/seed/team-maler-thomas/300/300"
+              alt="Porträtfoto von Thomas Bauer"
+              width="300" height="300" loading="lazy" />
+            <h4 class="team-card__name">Thomas Bauer</h4>
+            <p class="team-card__role">Geselle &amp; Farbberatung</p>
+          </div>
+
+          <div class="team-card">
+            <img class="team-card__photo"
+              src="https://picsum.photos/seed/team-maler-anna/300/300"
+              alt="Porträtfoto von Anna Schreier"
+              width="300" height="300" loading="lazy" />
+            <h4 class="team-card__name">Anna Schreier</h4>
+            <p class="team-card__role">Büro &amp; Terminkoordination</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FDFAF6;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#2C1A0E"/></svg></div>
+
+    <!-- ============================================================
+         6. BEWERTUNGEN (NEU)
+         3 GOOGLE-BEWERTUNGEN HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section section--dark" id="bewertungen">
+      <div class="container">
+        <div class="section__header" style="color:var(--color-white);">
+          <!-- TAG UND TITEL HIER ANPASSEN -->
+          <span class="section__tag">Was unsere Kunden sagen</span>
+          <h2 class="section__title" style="color:var(--color-white);">Bewertungen</h2>
+          <p class="section__lead" style="color:rgba(255,255,255,0.72);">
+            Über 4,9 Sterne auf Google – weil saubere Arbeit und Zuverlässigkeit
+            für sich sprechen.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <!-- BEWERTUNG 1 HIER ANPASSEN -->
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 von 5 Sternen">
+              <!-- 5 Sterne SVG -->
+              <svg viewBox="0 0 80 16" fill="var(--color-accent)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0l2.245 4.553L16 5.382l-4 3.897.944 5.502L8 12.553l-4.944 2.228L4 9.28 0 5.382l5.755-.829z"/><path d="M24 0l2.245 4.553L32 5.382l-4 3.897.944 5.502L24 12.553l-4.944 2.228L20 9.28l-4-3.898 5.755-.829z"/><path d="M40 0l2.245 4.553L48 5.382l-4 3.897.944 5.502L40 12.553l-4.944 2.228L36 9.28l-4-3.898 5.755-.829z"/><path d="M56 0l2.245 4.553L64 5.382l-4 3.897.944 5.502L56 12.553l-4.944 2.228L52 9.28l-4-3.898 5.755-.829z"/><path d="M72 0l2.245 4.553L80 5.382l-4 3.897.944 5.502L72 12.553l-4.944 2.228L68 9.28l-4-3.898 5.755-.829z"/></svg>
+            </div>
+            <!-- BEWERTUNGSTEXT HIER ANPASSEN -->
+            <blockquote class="review-card__text">
+              „Absolut empfehlenswert! Das Team war pünktlich, extrem sauber und das
+              Ergebnis übertrifft unsere Erwartungen. Die Online-Buchung hat super
+              funktioniert – Termin war innerhalb von zwei Stunden bestätigt."
+            </blockquote>
+            <div class="review-card__author">
+              <!-- NAME UND ORT HIER ANPASSEN -->
+              <strong class="review-card__name">Familie Huber</strong>
+              <span class="review-card__source">Google · Musterstadt</span>
+            </div>
+          </article>
+
+          <!-- BEWERTUNG 2 HIER ANPASSEN -->
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 von 5 Sternen">
+              <svg viewBox="0 0 80 16" fill="var(--color-accent)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0l2.245 4.553L16 5.382l-4 3.897.944 5.502L8 12.553l-4.944 2.228L4 9.28 0 5.382l5.755-.829z"/><path d="M24 0l2.245 4.553L32 5.382l-4 3.897.944 5.502L24 12.553l-4.944 2.228L20 9.28l-4-3.898 5.755-.829z"/><path d="M40 0l2.245 4.553L48 5.382l-4 3.897.944 5.502L40 12.553l-4.944 2.228L36 9.28l-4-3.898 5.755-.829z"/><path d="M56 0l2.245 4.553L64 5.382l-4 3.897.944 5.502L56 12.553l-4.944 2.228L52 9.28l-4-3.898 5.755-.829z"/><path d="M72 0l2.245 4.553L80 5.382l-4 3.897.944 5.502L72 12.553l-4.944 2.228L68 9.28l-4-3.898 5.755-.829z"/></svg>
+            </div>
+            <!-- BEWERTUNGSTEXT HIER ANPASSEN -->
+            <blockquote class="review-card__text">
+              „Unsere Fassade sah aus wie neu – und das nach über 15 Jahren. Fachkundige
+              Beratung, faire Preise, keine versteckten Kosten. Den nächsten Termin habe
+              ich bereits gebucht. Besser geht's nicht."
+            </blockquote>
+            <div class="review-card__author">
+              <!-- NAME UND ORT HIER ANPASSEN -->
+              <strong class="review-card__name">Peter W.</strong>
+              <span class="review-card__source">Google · Bergdorf</span>
+            </div>
+          </article>
+
+          <!-- BEWERTUNG 3 HIER ANPASSEN -->
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 von 5 Sternen">
+              <svg viewBox="0 0 80 16" fill="var(--color-accent)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0l2.245 4.553L16 5.382l-4 3.897.944 5.502L8 12.553l-4.944 2.228L4 9.28 0 5.382l5.755-.829z"/><path d="M24 0l2.245 4.553L32 5.382l-4 3.897.944 5.502L24 12.553l-4.944 2.228L20 9.28l-4-3.898 5.755-.829z"/><path d="M40 0l2.245 4.553L48 5.382l-4 3.897.944 5.502L40 12.553l-4.944 2.228L36 9.28l-4-3.898 5.755-.829z"/><path d="M56 0l2.245 4.553L64 5.382l-4 3.897.944 5.502L56 12.553l-4.944 2.228L52 9.28l-4-3.898 5.755-.829z"/><path d="M72 0l2.245 4.553L80 5.382l-4 3.897.944 5.502L72 12.553l-4.944 2.228L68 9.28l-4-3.898 5.755-.829z"/></svg>
+            </div>
+            <!-- BEWERTUNGSTEXT HIER ANPASSEN -->
+            <blockquote class="review-card__text">
+              „Bürorenovierung in einem Wochenende – dachten wir wäre unmöglich.
+              Das Team von Malerbetrieb Muster hat's wahr gemacht. Professionell,
+              schnell, kein Staub, kein Chaos. Klare Empfehlung!"
+            </blockquote>
+            <div class="review-card__author">
+              <!-- NAME UND ORT HIER ANPASSEN -->
+              <strong class="review-card__name">Sandra K., Geschäftsführerin</strong>
+              <span class="review-card__source">Google · Musterstadt</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#2C1A0E;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F3EAD8"/></svg></div>
+
+    <!-- ============================================================
+         7. KONTAKT
+         ADRESSE, TELEFON, E-MAIL, ÖFFNUNGSZEITEN HIER ANPASSEN.
+         (Kein Kontaktformular nötig – Buchungsblock übernimmt das.)
+         ============================================================ -->
+    <section class="section section--alt contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">So erreichen Sie uns</span>
+          <!-- ÜBERSCHRIFT HIER ANPASSEN -->
+          <h2 class="section__title">Kontakt &amp; Öffnungszeiten</h2>
+          <p class="section__lead">
+            Oder buchen Sie direkt online – schnell und ohne Warteschleife.
+            <a href="#buchen" style="color:var(--color-secondary);font-weight:600;text-decoration:underline;"> Zum Buchungsblock ↑</a>
+          </p>
+        </div>
+
+        <div class="contact-info-row">
+
+          <div class="contact-info-card">
+            <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <h3 class="contact-info-card__title">Adresse</h3>
+              <!-- ADRESSE HIER ANPASSEN -->
+              <address class="contact-info-card__text">
+                Malerbetrieb Muster GmbH<br>
+                Handwerkerstraße 7<br>
+                80000 Musterstadt
+              </address>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <div>
+              <h3 class="contact-info-card__title">Telefon &amp; E-Mail</h3>
+              <!-- TELEFON & E-MAIL HIER ANPASSEN -->
+              <p class="contact-info-card__text">
+                <a href="tel:+4989123456780">089 12 34 56 – 0</a><br>
+                <a href="mailto:info@malerbetrieb-muster.de">info@malerbetrieb-muster.de</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            <div>
+              <h3 class="contact-info-card__title">Öffnungszeiten</h3>
+              <!-- ÖFFNUNGSZEITEN HIER ANPASSEN -->
+              <dl class="hours-list">
+                <dt>Mo – Fr</dt><dd>07:00 – 17:00 Uhr</dd>
+                <dt>Samstag</dt><dd>08:00 – 12:00 Uhr (nach Vereinbarung)</dd>
+                <dt>Sonntag</dt><dd>Geschlossen</dd>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ALLE INHALTE IN DEN SPALTEN HIER ANPASSEN.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="8" fill="#5C3D2E"/>
+            <!-- INITIALEN HIER ANPASSEN -->
+            <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#F3EAD8">MM</text>
+          </svg>
+          <!-- FIRMENNAME HIER ANPASSEN -->
+          <span class="footer-brand__name">Malerbetrieb Muster</span>
+        </div>
+        <!-- FIRMENBESCHREIBUNG HIER ANPASSEN -->
+        <p class="footer-brand__desc">
+          Familiengeführter Malerbetrieb in Musterstadt. Hochwertige Renovierungen
+          und Anstriche – zuverlässig, sauber, termingerecht. Jetzt bequem online buchen.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#buchen">Termin buchen</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#bewertungen">Bewertungen</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <!-- ADRESSE HIER ANPASSEN -->
+            <span>Handwerkerstraße 7<br>80000 Musterstadt</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <!-- TELEFON HIER ANPASSEN -->
+            <a href="tel:+4989123456780">089 12 34 56 – 0</a>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <!-- E-MAIL HIER ANPASSEN -->
+            <a href="mailto:info@malerbetrieb-muster.de">info@malerbetrieb-muster.de</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Öffnungszeiten</h3>
+        <!-- ÖFFNUNGSZEITEN HIER ANPASSEN -->
+        <dl class="footer-hours">
+          <dt>Mo – Fr</dt><dd>07:00 – 17:00 Uhr</dd>
+          <dt>Samstag</dt><dd>08:00 – 12:00 Uhr</dd>
+          <dt>Sonntag</dt><dd>Geschlossen</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <!-- COPYRIGHT HIER ANPASSEN -->
+        <p>&copy; 2025 Malerbetrieb Muster GmbH. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <!-- IMPRESSUM & DATENSCHUTZ LINKS HIER ANPASSEN -->
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

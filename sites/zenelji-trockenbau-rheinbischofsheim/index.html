@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEITENTITEL HIER ANPASSEN -->
+  <title>Zenelji Trockenbau – Rheinau-Rheinbischofsheim</title>
+
+  <meta name="description" content="Zenelji Trockenbau aus Rheinau-Rheinbischofsheim – Wände, Decken, Dämmung und Innenausbau in der Ortenau." />
+
+  <!-- FAVICON HIER EINBINDEN -->
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" /> -->
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll-Fortschrittsbalken (wird per JS befüllt) -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       Anker-Links zeigen auf Sektionen dieser Seite.
+       FIRMENNAME, INITIALEN und MENÜPUNKTE HIER ANPASSEN.
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- LOGO: INITIALEN & FIRMENNAME HIER ANPASSEN -->
+      <a href="#start" class="logo" aria-label="Zenelji Trockenbau – nach oben">
+        <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="8" fill="#3A3A3A"/>
+          <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#F3EAD8">ZT</text>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name">Zenelji Trockenbau</span>
+          <span class="logo__sub">Rheinbischofsheim</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <!-- MENÜPUNKTE HIER ANPASSEN -->
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Leistungen</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Referenzen</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">Über uns</a></li>
+          <li class="main-nav__item"><a href="#aktuelles">Aktuelles</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <a href="#kontakt" class="btn btn--primary">Kontakt aufnehmen</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- ============================================================
+         1. HERO
+         BILD, ÜBERSCHRIFT UND BUTTONS HIER ANPASSEN.
+         ============================================================ -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <!-- HERO-BILD HIER AUSTAUSCHEN (min. 1600 × 900 px) -->
+        <img
+          src="https://images.pexels.com/photos/4981770/pexels-photo-4981770.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="Trockenbauarbeiten an einer Wand"
+          width="1600" height="900"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="hero__tag">Trockenbau in der Ortenau</span>
+        <h1 class="hero__title">
+          Sauber ausgebaut –<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero__lead">
+          Zenelji Trockenbau aus Rheinau-Rheinbischofsheim realisiert Wände,
+          Decken und Innenausbau fachgerecht – von der Planung bis zur
+          sauberen Übergabe.
+        </p>
+        <div class="hero__actions">
+          <!-- BUTTONS HIER ANPASSEN -->
+          <a href="#leistungen" class="btn btn--primary btn--lg">Unsere Leistungen</a>
+          <a href="#kontakt" class="btn btn--outline-white btn--lg">Kostenlos anfragen</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#2C1A0E;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FDFAF6"/></svg></div>
+
+    <!-- ============================================================
+         2. LEISTUNGEN
+         SVG-ICONS, TITEL UND TEXTE DER 4 KARTEN HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG, TITEL UND BESCHREIBUNG HIER ANPASSEN -->
+          <span class="section__tag">Was wir für Sie leisten</span>
+          <h2 class="section__title">Unsere Leistungen</h2>
+          <p class="section__lead">
+            Von der Planung bis zur Übergabe – wir übernehmen Ihr Holzbauprojekt
+            vollständig, zuverlässig und mit dem nötigen Gespür fürs Handwerk.
+          </p>
+        </div>
+
+        <!-- 4 LEISTUNGSKARTEN -->
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <!-- LEISTUNG 1 HIER ANPASSEN -->
+          <div class="service-detail-card" id="dachstuhlbau">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 1 HIER AUSTAUSCHEN (800 × 500 px) -->
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/4981770/pexels-photo-4981770.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Trockenbauwand im Rohbau"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Dachstuhl -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 15L18 4l15 11" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                  <rect x="7" y="15" width="22" height="17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M18 4v28M3 15h30" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2.5 2.5"/>
+                  <path d="M18 8l-9 7M18 8l9 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <!-- KATEGORIE, TITEL UND TEXT HIER ANPASSEN -->
+              <span class="service-detail-card__tag">Wände</span>
+              <h3 class="service-detail-card__title">Trockenbauwände</h3>
+              <p class="service-detail-card__text">
+                Raumtrennwände und Vorsatzschalen aus Gipskarton – schnell
+                aufgebaut, sauber verspachtelt und bereit zum Streichen.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 2 HIER ANPASSEN -->
+          <div class="service-detail-card" id="holzrahmenbau">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 2 HIER AUSTAUSCHEN -->
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Deckenarbeiten im Innenausbau"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Haus -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 14l14-9 14 9v18H4V14z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                  <rect x="13" y="22" width="10" height="10" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M4 14h28M13 14v18M23 14v18M4 22h28" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2.5 2.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">Decken</span>
+              <h3 class="service-detail-card__title">Abgehängte Decken</h3>
+              <p class="service-detail-card__text">
+                Abgehängte Decken für Dämmung, Beleuchtung und Akustik –
+                sauber verarbeitet, auch bei beengten Raumhöhen.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 3 HIER ANPASSEN -->
+          <div class="service-detail-card" id="innenausbau">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 3 HIER AUSTAUSCHEN -->
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Dämmarbeiten an einer Wand"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Treppe -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 30h6V24h6v-6h6v-6h6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="6" y1="6" x2="6" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="6" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">Dämmung</span>
+              <h3 class="service-detail-card__title">Dämmung &amp; Schallschutz</h3>
+              <p class="service-detail-card__text">
+                Wärme- und Schalldämmung direkt in die Trockenbaukonstruktion
+                integriert – für ein angenehmes Raumklima.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 4 HIER ANPASSEN -->
+          <div class="service-detail-card" id="restaurierung">
+            <div class="service-detail-card__image-wrap">
+              <!-- LEISTUNGSBILD 4 HIER AUSTAUSCHEN -->
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/5493669/pexels-photo-5493669.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Innenausbauarbeiten an einer Wand"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Werkzeug -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28 6l-4 4-2.5-2.5 4-4A6.5 6.5 0 0016 12L5 23a2.5 2.5 0 003.5 3.5L19.5 16A6.5 6.5 0 0028 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <circle cx="9.5" cy="25.5" r="2" fill="currentColor"/>
+                  <path d="M22 14l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Innenausbau</span>
+              <h3 class="service-detail-card__title">Innenausbau nach Maß</h3>
+              <p class="service-detail-card__text">
+                Vom Dachgeschossausbau bis zur Raumaufteilung – wir setzen
+                Ihr Innenausbauprojekt sauber und termingerecht um.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FDFAF6;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F3EAD8"/></svg></div>
+
+    <!-- ============================================================
+         3. REFERENZEN
+         BILDER UND BESCHRIFTUNGEN HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section section--alt" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG UND TITEL HIER ANPASSEN -->
+          <span class="section__tag">Unsere Arbeit spricht für sich</span>
+          <h2 class="section__title">Ausgewählte Referenzprojekte</h2>
+          <p class="section__lead">
+            Bildbeispiele aus unserem Leistungsspektrum – konkrete Referenzprojekte mit
+            Namen und Ort werden auf Kundenwunsch ergänzt.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/4981770/pexels-photo-4981770.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Trockenbauwand"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Beispiel: Trockenbauwand</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Deckenarbeiten"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">[Projektname &amp; Ort vom Kunden]</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Dämmarbeiten"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Beispiel: Dämmung</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/5493669/pexels-photo-5493669.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Innenausbauarbeiten"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">[Projektname &amp; Ort vom Kunden]</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F3EAD8;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FDFAF6"/></svg></div>
+
+    <!-- ============================================================
+         4. ÜBER UNS
+         FIRMENGESCHICHTE, KENNZAHLEN UND TEAM HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <!-- ÜBERSCHRIFT HIER ANPASSEN -->
+          <h2 class="section__title">Über uns</h2>
+        </div>
+
+        <!-- Firmengeschichte: Text + Foto -->
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Unser Betrieb</span>
+            <h3 class="about-content__title">Trockenbaubetrieb aus Rheinbischofsheim</h3>
+            <p class="about-content__text">
+              Zenelji Trockenbau ist ein Handwerksbetrieb aus Rheinau-Rheinbischofsheim
+              in der Ortenau. Wände, Decken, Dämmung und Innenausbau –
+              fachgerecht und termingerecht umgesetzt.
+            </p>
+            <p class="about-content__text">
+              Kurze Wege und direkte Absprachen: Als kleiner Betrieb sind wir
+              flexibel und schnell vor Ort erreichbar.
+            </p>
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Trockenbaufachbetrieb
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Zu Hause in der Ortenau
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Sauber &amp; termingerecht
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Deckenarbeiten im Innenausbau"
+              width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen-Balken: bewusst ohne erfundene Zahlen/Gründungsjahr -->
+    <div class="stats-bar" aria-label="Unsere Werte">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__number" style="font-size:1.5rem;">Trockenbau</div>
+            <div class="stat-item__label">Fachbetrieb</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" style="font-size:1.5rem;">Kurze Wege</div>
+            <div class="stat-item__label">in der Ortenau</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" style="font-size:1.5rem;">Ein Ansprechpartner</div>
+            <div class="stat-item__label">von Anfang bis Ende</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team: anonymisiert, Ansprechpartner wird auf Kundenwunsch ergänzt -->
+    <section class="section section--alt" aria-label="Team">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Ihr Ansprechpartner</span>
+          <h3 class="section__title">Persönlich für Sie da</h3>
+        </div>
+
+        <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 260px)); justify-content:center;">
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Platzhalter-Avatar">
+              <rect width="300" height="300" fill="#F3EAD8"/>
+              <circle cx="150" cy="120" r="55" fill="#C9B79C"/>
+              <path d="M60 280c0-60 40-100 90-100s90 40 90 100" fill="#C9B79C"/>
+            </svg>
+            <h4 class="team-card__name">Trockenbauer</h4>
+            <p class="team-card__role">Ansprechpartner folgt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F3EAD8;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#FDFAF6"/></svg></div>
+
+    <!-- ============================================================
+         5. AKTUELLES
+         DATUM, KATEGORIE, TITEL UND TEXT DER 3 KARTEN ANPASSEN.
+         ============================================================ -->
+    <section class="section" id="aktuelles">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG UND TITEL HIER ANPASSEN -->
+          <span class="section__tag">Neuigkeiten &amp; Projekte</span>
+          <h2 class="section__title">Aktuelles aus dem Betrieb</h2>
+          <p class="section__lead">
+            Wissenswertes rund ums Thema Trockenbau.
+          </p>
+        </div>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="https://images.pexels.com/photos/4981770/pexels-photo-4981770.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Trockenbauwand"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta"><span class="news-card__cat">Ratgeber</span></div>
+              <h3 class="news-card__title"><a href="#aktuelles">Trockenbau oder Mauerwerk – was passt zu mir?</a></h3>
+              <p class="news-card__text">
+                Schneller Aufbau, flexible Raumaufteilung: Wir erklären, wann
+                sich Trockenbau besonders lohnt.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Deckenarbeiten"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta"><span class="news-card__cat">Ratgeber</span></div>
+              <h3 class="news-card__title"><a href="#aktuelles">Abgehängte Decke: Mehr als nur Optik</a></h3>
+              <p class="news-card__text">
+                Beleuchtung, Dämmung und Akustik lassen sich clever in die
+                Decke integrieren. Wir erklären die Möglichkeiten.
+              </p>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Dämmarbeiten"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta"><span class="news-card__cat">Ratgeber</span></div>
+              <h3 class="news-card__title"><a href="#aktuelles">Schallschutz im Trockenbau: Worauf es ankommt</a></h3>
+              <p class="news-card__text">
+                Die richtige Dämmung macht den Unterschied. Wir erklären,
+                welche Materialien sich eignen.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. KONTAKT
+         FORMULAR-ENDPUNKT IN js/main.js ANPASSEN.
+         ADRESSE, TELEFON, E-MAIL, ÖFFNUNGSZEITEN HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Nehmen Sie Kontakt auf</span>
+          <!-- ÜBERSCHRIFT HIER ANPASSEN -->
+          <h2 class="section__title">Wir freuen uns auf Ihr Projekt</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- KONTAKTFORMULAR -->
+          <!-- FORMULAR-VERSAND IN js/main.js ANPASSEN -->
+          <form class="contact-form" id="kontaktformular" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">Ihr Name <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+              <input class="form-control" type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="089 12 34 56 – 0" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="betreff">Betreff</label>
+              <input class="form-control" type="text" id="betreff" name="betreff" placeholder="z. B. Dachstuhlbau – Neubauprojekt" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachricht">Ihre Nachricht <span aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="nachricht" name="nachricht" required placeholder="Beschreiben Sie kurz Ihr Vorhaben …"></textarea>
+            </div>
+            <!-- DATENSCHUTZ-LINK HIER ANPASSEN -->
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+              Mit dem Absenden stimmen Sie unserer
+              <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerklärung</a> zu.
+            </p>
+            <button type="submit" class="btn btn--primary btn--lg">Nachricht absenden</button>
+          </form>
+
+          <!-- KONTAKTINFORMATIONEN -->
+          <div class="contact-info">
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Adresse</h3>
+                <address class="contact-info-card__text">
+                  Zenelji Trockenbau<br>
+                  Lichtenberger Str. 50<br>
+                  77866 Rheinau-Rheinbischofsheim
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Telefon &amp; E-Mail</h3>
+                <p class="contact-info-card__text">
+                  <a href="tel:+497844918575">07844 91 85 75</a><br>
+                  <a href="mailto:info@zenelji-trockenbau.de">info@zenelji-trockenbau.de</a>
+                  <!-- TODO: echte E-Mail-Adresse vom Kunden bestätigen lassen -->
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Öffnungszeiten</h3>
+                <!-- Öffnungszeiten nicht öffentlich auffindbar – branchenüblicher Platzhalter -->
+                <dl class="hours-list">
+                  <dt>Mo – Fr</dt><dd>07:00 – 17:00 Uhr</dd>
+                  <dt>Sa / So</dt><dd>Nach Vereinbarung</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ALLE INHALTE IN DEN SPALTEN HIER ANPASSEN.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="8" fill="#3A3A3A"/>
+            <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#F3EAD8">ZT</text>
+          </svg>
+          <span class="footer-brand__name">Zenelji Trockenbau</span>
+        </div>
+        <p class="footer-brand__desc">
+          Trockenbaubetrieb in Rheinau-Rheinbischofsheim. Wände, Decken,
+          Dämmung und Innenausbau in der Ortenau.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#aktuelles">Aktuelles</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Lichtenberger Str. 50<br>77866 Rheinau-Rheinbischofsheim</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <a href="tel:+497844918575">07844 91 85 75</a>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:info@zenelji-trockenbau.de">info@zenelji-trockenbau.de</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Öffnungszeiten</h3>
+        <dl class="footer-hours">
+          <dt>Mo – Fr</dt><dd>07:00 – 17:00 Uhr</dd>
+          <dt>Sa / So</dt><dd>Nach Vereinbarung</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; 2026 Zenelji Trockenbau. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <!-- IMPRESSUM & DATENSCHUTZ LINKS HIER ANPASSEN -->
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

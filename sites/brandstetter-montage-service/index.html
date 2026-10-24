@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Brandstetter Montage-Service – dicht-o-fix, Möbelmontage & Trockenbau in Oberkirch</title>
+
+  <meta name="description" content="Brandstetter Montage-Service aus Oberkirch-Nußbach – dicht-o-fix Fenster-/Türdichtungen, Möbelmontage, Trockenbau, Fertigparkett und Zimmertüren im Renchtal. Jetzt online anfragen." />
+
+  <!-- FAVICON HIER EINBINDEN -->
+  <!-- <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" /> -->
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll-Fortschrittsbalken -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       FIRMENNAME, INITIALEN und MENÜPUNKTE HIER ANPASSEN.
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#start" class="logo" aria-label="Brandstetter Montage-Service – nach oben">
+        <img class="logo__img" src="assets/logo-brandstetter.jpg" alt="Brandstetter Montage-Service Logo" height="36" />
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <!-- MENÜPUNKTE HIER ANPASSEN -->
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Leistungen</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Referenzen</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">Über uns</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <!-- PRIMÄRE CTA: BUCHUNGS-LINK -->
+          <a href="#buchen" class="btn btn--primary">Termin buchen</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- ============================================================
+         1. HERO
+         BILD, ÜBERSCHRIFT UND BUTTONS HIER ANPASSEN.
+         ============================================================ -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <img
+          src="https://images.pexels.com/photos/5691503/pexels-photo-5691503.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop"
+          alt="Fachgerechte Montage an einem historischen Holzfenster"
+          width="1600" height="900"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="hero__tag">Montage online anfragen – schnell & unkompliziert</span>
+        <h1 class="hero__title">
+          Ihr Montage-Profi –<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero__lead">
+          Brandstetter Montage-Service aus Oberkirch-Nußbach steht für dicht-o-fix
+          Fenster- und Türdichtungen, Möbelmontage, Trockenbau sowie Fertigparkett
+          und Zimmertüren im Renchtal – termingerecht, sauber und zu fairen Preisen.
+        </p>
+        <div class="hero__actions">
+          <a href="#buchen" class="btn btn--primary btn--lg">Jetzt anfragen</a>
+          <a href="#leistungen" class="btn btn--outline-white btn--lg">Unsere Leistungen</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#201F1D;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FAFAF9"/></svg></div>
+
+    <!-- ============================================================
+         2. LEISTUNGEN
+         SVG-ICONS, TITEL UND TEXTE DER 4 KARTEN HIER ANPASSEN.
+         TIPP: data-service muss mit den service-option[data-service]
+         Werten im Buchungsblock übereinstimmen (dann springt Klick
+         auf „Jetzt anfragen" direkt zum vorausgefüllten Buchungsblock).
+         ============================================================ -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG, TITEL UND BESCHREIBUNG HIER ANPASSEN -->
+          <span class="section__tag">Was wir für Sie leisten</span>
+          <h2 class="section__title">Unsere Leistungen</h2>
+          <p class="section__lead">
+            Spezialist statt Alleskönner: von dicht-o-fix Fenster- und Türdichtungen
+            über Möbelmontage bis zu Fertigparkett – seit 2010 aus Oberkirch-Nußbach.
+          </p>
+        </div>
+
+        <!-- 4 LEISTUNGSKARTEN -->
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <div class="service-detail-card" id="dichtofix">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/5691501/pexels-photo-5691501.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop"
+                alt="Fachgerechte Aufarbeitung eines Fensterrahmens"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="5" width="26" height="26" rx="2" stroke="currentColor" stroke-width="2.2"/>
+                  <line x1="18" y1="5" x2="18" y2="31" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="5" y1="18" x2="31" y2="18" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <span class="service-detail-card__tag">dicht-o-fix</span>
+              <h3 class="service-detail-card__title">Fenster- und Türdichtungen mit dicht-o-fix</h3>
+              <p class="service-detail-card__text">
+                Undichte, klemmende oder zugige Fenster und Türen müssen nicht gleich
+                ersetzt werden: Mit dem dicht-o-fix System dichten wir Ihre bestehenden
+                Fenster und Türen fachgerecht nach – spürbar weniger Zugluft und Energieverlust.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="dichtofix">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <div class="service-detail-card" id="moebelmon">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/4554417/pexels-photo-4554417.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop"
+                alt="Möbelmontage mit Schraubendreher"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="10" width="28" height="18" rx="2" stroke="currentColor" stroke-width="2.2"/>
+                  <line x1="4" y1="19" x2="32" y2="19" stroke="currentColor" stroke-width="1.6"/>
+                  <line x1="8" y1="28" x2="8" y2="33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="28" y1="28" x2="28" y2="33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">Möbelmontage</span>
+              <h3 class="service-detail-card__title">Möbelmontage – schnell, sauber, fachgerecht</h3>
+              <p class="service-detail-card__text">
+                Vom Einzelmöbel bis zur kompletten Einrichtung: wir bauen Schränke,
+                Regale, Betten und Zimmertüren fachgerecht auf – sicher verankert,
+                perfekt ausgerichtet, ohne Rückstände.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="moebelmon">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <div class="service-detail-card" id="trockenbau">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/11427092/pexels-photo-11427092.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop"
+                alt="Trockenbauarbeiten mit präzisem Zuschnitt"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="9" width="21" height="24" rx="1" stroke="currentColor" stroke-width="2"/>
+                  <rect x="12" y="4" width="19" height="22" rx="1" stroke="currentColor" stroke-width="2" fill="var(--color-bg)"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">Trockenbau</span>
+              <h3 class="service-detail-card__title">Trockenbauarbeiten</h3>
+              <p class="service-detail-card__text">
+                Trennwände, Vorsatzschalen und Deckenabhängungen aus Gipskarton –
+                exakt geplant und sauber ausgeführt, für Privat- und Gewerbeobjekte
+                gleichermaßen.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="trockenbau">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <div class="service-detail-card" id="bodenbelaege">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop"
+                alt="Verlegung von Fertigparkett mit dem Akkuschrauber"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="6" width="30" height="20" rx="2" stroke="currentColor" stroke-width="2.2"/>
+                  <line x1="3" y1="14" x2="33" y2="14" stroke="currentColor" stroke-width="1.6"/>
+                  <line x1="18" y1="14" x2="18" y2="26" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Fertigparkett, Laminat &amp; Zimmertüren</span>
+              <h3 class="service-detail-card__title">Bodenbeläge &amp; Zimmertüren fachgerecht verlegt</h3>
+              <p class="service-detail-card__text">
+                Verlegung von Fertigparkett und Laminat sowie Einbau von Zimmertüren –
+                exakt zugeschnitten und sauber montiert, für ein stimmiges Gesamtbild
+                in Ihren Räumen.
+              </p>
+              <a href="#buchen" class="btn btn--cta" data-preselectservice="bodenbelaege">Jetzt anfragen</a>
+            </div>
+          </div>
+
+        </div>
+
+        <p style="text-align:center;color:var(--color-text-muted);font-size:0.9rem;margin-top:-1.5rem;">
+          Weitere Leistungen wie Umzugsservice oder Decken- und Wandverkleidungen auf Anfrage.
+        </p>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FAFAF9;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F0EFEC"/></svg></div>
+
+    <!-- ============================================================
+         3. BUCHUNGS-BLOCK (NEU)
+         3-stufiger Wizard: Leistung → Datum & Uhrzeit → Kontaktdaten
+         LEISTUNGEN, ZEITEN UND FORMULAR-BACKEND IN js/main.js ANPASSEN.
+         ============================================================ -->
+    <section class="section section--alt booking-section" id="buchen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG, TITEL UND BESCHREIBUNG HIER ANPASSEN -->
+          <span class="section__tag">Schnell &amp; unkompliziert</span>
+          <h2 class="section__title">Montage online anfragen</h2>
+          <p class="section__lead">
+            Leistung wählen, Wunschtermin angeben, Daten eingeben –
+            wir melden uns innerhalb von 24 Stunden mit einem Angebot.
+          </p>
+        </div>
+
+        <!-- Buchungs-Wizard-Karte -->
+        <div class="booking-card" role="form" aria-label="Terminbuchung">
+
+          <!-- Fortschrittsanzeige -->
+          <div class="booking-progress" aria-label="Buchungsfortschritt" role="list">
+            <div class="booking-step is-active" role="listitem" aria-current="step">
+              <span class="booking-step__num" aria-hidden="true">1</span>
+              <span class="booking-step__label">Leistung</span>
+            </div>
+            <div class="booking-progress__line" aria-hidden="true"></div>
+            <div class="booking-step" role="listitem">
+              <span class="booking-step__num" aria-hidden="true">2</span>
+              <span class="booking-step__label">Termin</span>
+            </div>
+            <div class="booking-progress__line" aria-hidden="true"></div>
+            <div class="booking-step" role="listitem">
+              <span class="booking-step__num" aria-hidden="true">3</span>
+              <span class="booking-step__label">Ihre Daten</span>
+            </div>
+          </div>
+
+          <!-- ── SCHRITT 1: Leistung wählen ── -->
+          <div class="booking-panel" id="booking-panel-1">
+            <h3 class="booking-panel__title">Welche Leistung benötigen Sie?</h3>
+
+            <!-- BUCHUNGS-LEISTUNGEN HIER ANPASSEN.
+                 data-service = eindeutiger ID-Schlüssel (entspricht data-preselectservice oben)
+                 data-label   = Anzeigename in der Zusammenfassung
+                 data-duration = Dauer-Hinweis für den Kunden -->
+            <div class="service-select-grid" role="group" aria-labelledby="step1-heading" id="service-select-grid">
+
+              <button type="button" class="service-option"
+                data-service="dichtofix"
+                data-label="dicht-o-fix"
+                data-duration="ab 2 Std.">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="5" width="26" height="26" rx="2" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="18" y1="5" x2="18" y2="31" stroke="currentColor" stroke-width="1.8"/>
+                    <line x1="5" y1="18" x2="31" y2="18" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </span>
+                <span class="service-option__name" style="white-space:nowrap;">dicht‑o‑fix</span>
+                <span class="service-option__meta">Fenster- & Türdichtungen · ab 2 Std.</span>
+              </button>
+
+              <button type="button" class="service-option"
+                data-service="moebelmon"
+                data-label="Möbelmontage"
+                data-duration="ab 2 Std.">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="10" width="28" height="18" rx="2" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="4" y1="19" x2="32" y2="19" stroke="currentColor" stroke-width="1.6"/>
+                    <line x1="8" y1="28" x2="8" y2="33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="28" y1="28" x2="28" y2="33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Möbelmontage</span>
+                <span class="service-option__meta">Schränke, Regale, Betten · ab 2 Std.</span>
+              </button>
+
+              <button type="button" class="service-option"
+                data-service="trockenbau"
+                data-label="Trockenbau"
+                data-duration="nach Aufwand">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="9" width="21" height="24" rx="1" stroke="currentColor" stroke-width="2"/>
+                    <rect x="12" y="4" width="19" height="22" rx="1" stroke="currentColor" stroke-width="2" fill="var(--color-bg)"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Trockenbau</span>
+                <span class="service-option__meta">Wände, Decken, Gipskarton · nach Aufwand</span>
+              </button>
+
+              <button type="button" class="service-option"
+                data-service="bodenbelaege"
+                data-label="Fertigparkett, Laminat & Zimmertüren"
+                data-duration="nach Aufwand">
+                <span class="service-option__check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8l4 4 6-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="service-option__icon" aria-hidden="true">
+                  <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="6" width="30" height="20" rx="2" stroke="currentColor" stroke-width="2.2"/>
+                    <line x1="3" y1="14" x2="33" y2="14" stroke="currentColor" stroke-width="1.6"/>
+                    <line x1="18" y1="14" x2="18" y2="26" stroke="currentColor" stroke-width="1.6"/>
+                  </svg>
+                </span>
+                <span class="service-option__name">Fertigparkett, Laminat &amp; Zimmertüren</span>
+                <span class="service-option__meta">Bodenbeläge & Türen · nach Aufwand</span>
+              </button>
+
+            </div>
+
+            <p class="booking-error" id="error-step1" role="alert" hidden>Bitte wählen Sie eine Leistung aus.</p>
+
+            <div class="booking-nav booking-nav--right">
+              <button type="button" class="btn btn--primary btn--lg" id="step1-next">
+                Weiter
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ── SCHRITT 2: Datum & Uhrzeit ── -->
+          <div class="booking-panel" id="booking-panel-2" hidden>
+            <h3 class="booking-panel__title">Wann soll es losgehen?</h3>
+
+            <div class="datetime-grid">
+
+              <!-- Datums-Auswahl -->
+              <div class="datetime-col">
+                <label class="form-label" for="booking-date">Datum wählen</label>
+                <!-- DATUM-INPUT: min wird per JS auf heute gesetzt -->
+                <input class="form-control booking-date-input" type="date" id="booking-date" required />
+                <p class="booking-hint" style="margin-top:0.5rem;">
+                  Montag – Freitag · Samstag auf Anfrage
+                </p>
+              </div>
+
+              <!-- Zeit-Slots -->
+              <div class="datetime-col">
+                <p class="form-label" id="time-slots-label">Uhrzeit wählen</p>
+
+                <!-- ZEITEN HIER ANPASSEN.
+                     is-booked + disabled = bereits vergeben (z. B. per Backend befüllen)
+                     Für Backend-Integration: Slots per fetch() laden und
+                     HTML dynamisch generieren – Kommentar in js/main.js. -->
+                <div class="time-slots" role="group" aria-labelledby="time-slots-label" id="time-slots">
+                  <button type="button" class="time-slot" data-time="08:00">08:00</button>
+                  <button type="button" class="time-slot" data-time="09:00">09:00</button>
+                  <!-- is-booked zeigt "vergeben" an – per Backend befüllen -->
+                  <button type="button" class="time-slot is-booked" data-time="10:00" disabled aria-label="10:00 Uhr – bereits vergeben">10:00</button>
+                  <button type="button" class="time-slot" data-time="11:00">11:00</button>
+                  <!-- MITTAGSPAUSE HIER ANPASSEN ODER ENTFERNEN -->
+                  <button type="button" class="time-slot is-break" data-time="12:00" disabled aria-label="12:00 Uhr – Mittagspause">12:00</button>
+                  <button type="button" class="time-slot" data-time="13:00">13:00</button>
+                  <button type="button" class="time-slot is-booked" data-time="14:00" disabled aria-label="14:00 Uhr – bereits vergeben">14:00</button>
+                  <button type="button" class="time-slot" data-time="15:00">15:00</button>
+                  <button type="button" class="time-slot" data-time="16:00">16:00</button>
+                </div>
+
+                <!-- Legende -->
+                <div class="time-legend">
+                  <span class="time-legend__item"><span class="time-legend__dot time-legend__dot--free"></span>Frei</span>
+                  <span class="time-legend__item"><span class="time-legend__dot time-legend__dot--booked"></span>Vergeben</span>
+                </div>
+              </div>
+
+            </div>
+
+            <p class="booking-error" id="error-step2" role="alert" hidden>Bitte wählen Sie Datum und Uhrzeit.</p>
+
+            <div class="booking-nav">
+              <button type="button" class="btn btn--outline" id="step2-back">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                Zurück
+              </button>
+              <button type="button" class="btn btn--primary btn--lg" id="step2-next">
+                Weiter
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- ── SCHRITT 3: Kontaktdaten & Bestätigung ── -->
+          <div class="booking-panel" id="booking-panel-3" hidden>
+            <h3 class="booking-panel__title">Ihre Kontaktdaten</h3>
+
+            <!-- Buchungsübersicht -->
+            <div class="booking-summary" aria-label="Buchungsübersicht">
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Leistung</span>
+                <strong class="booking-summary__val" id="summary-service">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Datum</span>
+                <strong class="booking-summary__val" id="summary-date">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Uhrzeit</span>
+                <strong class="booking-summary__val" id="summary-time">–</strong>
+              </div>
+            </div>
+
+            <!-- Kontaktformular -->
+            <!-- FORMULAR-VERSAND IN js/main.js ANPASSEN (fetch / Formspree) -->
+            <form class="booking-form" id="buchungsformular" novalidate>
+
+              <div class="booking-form__grid">
+                <div class="form-group">
+                  <label class="form-label" for="b-name">Ihr Name <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="text" id="b-name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="b-email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="email" id="b-email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="b-tel">Telefon <span aria-hidden="true">*</span></label>
+                  <input class="form-control" type="tel" id="b-tel" name="telefon" required autocomplete="tel" placeholder="089 12 34 56 – 0" />
+                </div>
+                <div class="form-group">
+                  <!-- ADRESSFELD: hilfreich für Terminplanung, aber optional -->
+                  <label class="form-label" for="b-adresse">Adresse des Objekts <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+                  <input class="form-control" type="text" id="b-adresse" name="adresse" autocomplete="street-address" placeholder="Musterstraße 1, 80000 Musterstadt" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="b-nachricht">Anmerkungen <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+                <textarea class="form-control" id="b-nachricht" name="nachricht" placeholder="z. B. Raumgröße, besondere Anforderungen, Zufahrt …" style="min-height:110px;"></textarea>
+              </div>
+
+              <!-- DATENSCHUTZ-LINK HIER ANPASSEN -->
+              <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+                Mit dem Absenden stimmen Sie unserer
+                <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerklärung</a> zu.
+                Wir verwenden Ihre Daten ausschließlich zur Terminbestätigung.
+              </p>
+
+              <p class="booking-error" id="error-step3" role="alert" hidden>Bitte füllen Sie alle Pflichtfelder aus.</p>
+
+              <div class="booking-nav">
+                <button type="button" class="btn btn--outline" id="step3-back">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+                  Zurück
+                </button>
+                <button type="submit" class="btn btn--primary btn--lg">
+                  Termin verbindlich buchen
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- ── BESTÄTIGUNGS-ZUSTAND (nach erfolgreicher Buchung) ── -->
+          <div class="booking-panel booking-confirm" id="booking-panel-confirm" hidden>
+            <div class="booking-confirm__icon" aria-hidden="true">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="26" stroke="var(--color-secondary)" stroke-width="3"/>
+                <path d="M18 28l8 8 12-14" stroke="var(--color-secondary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="booking-confirm__title">Anfrage erfolgreich gesendet!</h3>
+            <p class="booking-confirm__text">
+              Vielen Dank, <strong id="confirm-name"></strong>. Wir haben Ihre Terminanfrage erhalten
+              und melden uns innerhalb von 24 Stunden per E-Mail oder Telefon zur Bestätigung.
+            </p>
+            <!-- Bestätigungs-Zusammenfassung -->
+            <div class="booking-summary" style="margin:1.5rem 0;" aria-label="Ihre Buchung">
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Leistung</span>
+                <strong class="booking-summary__val" id="confirm-service">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Datum</span>
+                <strong class="booking-summary__val" id="confirm-date">–</strong>
+              </div>
+              <div class="booking-summary__row">
+                <span class="booking-summary__key">Uhrzeit</span>
+                <strong class="booking-summary__val" id="confirm-time">–</strong>
+              </div>
+            </div>
+            <button type="button" class="btn btn--outline" id="booking-reset">Weiteren Termin buchen</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F0EFEC;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FAFAF9"/></svg></div>
+
+    <!-- ============================================================
+         4. REFERENZEN
+         BILDER UND BESCHRIFTUNGEN HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <!-- TAG UND TITEL HIER ANPASSEN -->
+          <span class="section__tag">Unsere Arbeit spricht für sich</span>
+          <h2 class="section__title">Einblicke in unsere Leistungen</h2>
+          <p class="section__lead">
+            Ein kleiner Einblick in die Arbeitsbereiche, mit denen wir uns täglich
+            beschäftigen.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/5691504/pexels-photo-5691504.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop"
+              alt="Altes Holzfenster vor der Dichtungs-Nachrüstung"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">dicht‑o‑fix Fensterdichtung</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/4554418/pexels-photo-4554418.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop"
+              alt="Möbelmontage direkt beim Kunden"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Möbelmontage vor Ort</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/11427055/pexels-photo-11427055.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop"
+              alt="Präziser Zuschnitt von Trockenbauplatten"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Trockenbau &amp; Innenausbau</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/11781094/pexels-photo-11781094.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop"
+              alt="Sorgfältig verpackter Umzugskarton"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Umzugsservice</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/4263067/pexels-photo-4263067.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop"
+              alt="Verlegung von Fertigparkett"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Fertigparkett &amp; Laminat</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop"
+              alt="Fensterlaibung nach der Sanierung"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Fensterarbeiten im Detail</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FAFAF9;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F0EFEC"/></svg></div>
+
+    <!-- ============================================================
+         5. ÜBER UNS
+         FIRMENGESCHICHTE, KENNZAHLEN UND TEAM HIER ANPASSEN.
+         ============================================================ -->
+    <section class="section section--alt" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <!-- ÜBERSCHRIFT HIER ANPASSEN -->
+          <h2 class="section__title">Über uns</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Wer wir sind</span>
+            <h3 class="about-content__title">Spezialist statt Alleskönner – seit 2010 in Oberkirch-Nußbach</h3>
+            <p class="about-content__text">
+              Brandstetter Montage-Service wurde im Dezember 2010 in Oberkirch-Nußbach
+              gegründet. Der Inhaber ist gelernter Schreiner und hat sich bewusst auf
+              wenige Leistungsbereiche spezialisiert, statt als Alleskönner aufzutreten –
+              das schafft Freiraum für saubere, genaue Arbeit.
+            </p>
+            <p class="about-content__text">
+              Zuverlässigkeit sowie sauberes und genaues Arbeiten sind für uns
+              Grundvoraussetzung, kein Zusatzversprechen. Wir sind Mitglied der
+              Handwerkskammer Freiburg und vor Ort direkt beim Kunden im Einsatz –
+              für Privatkunden ebenso wie für Gewerbekunden und Hausverwaltungen.
+            </p>
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Privat- & Gewerbekunden sowie Hausverwaltungen im Renchtal
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Mitglied der Handwerkskammer Freiburg
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Gegründet 2010, spezialisiert statt generalistisch
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/5691503/pexels-photo-5691503.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+              alt="Handwerkliche Montagearbeit an einem Fenster"
+              width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen-Balken -->
+    <div class="stats-bar" aria-label="Unsere Kennzahlen">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="16" data-suffix="+">16+</div>
+            <div class="stat-item__label">Jahre Erfahrung (seit 2010)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="4">4</div>
+            <div class="stat-item__label">Kernleistungen aus einer Hand</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-item__label">Zuverlässigkeit &amp; saubere Arbeit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <section class="section" aria-label="Team">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Die Menschen hinter dem Betrieb</span>
+          <h3 class="section__title">Unser Team</h3>
+        </div>
+        <div class="team-grid">
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="teamclip-1"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#C41414"/>
+              <g clip-path="url(#teamclip-1)" fill="#55564F" opacity="0.85">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="teamclip-2"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#C41414"/>
+              <g clip-path="url(#teamclip-2)" fill="#55564F" opacity="0.85">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="teamclip-3"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#C41414"/>
+              <g clip-path="url(#teamclip-3)" fill="#55564F" opacity="0.85">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FAFAF9;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F0EFEC"/></svg></div>
+
+    <!-- ============================================================
+         7. KONTAKT
+         ADRESSE, TELEFON, E-MAIL, ÖFFNUNGSZEITEN HIER ANPASSEN.
+         (Kein Kontaktformular nötig – Buchungsblock übernimmt das.)
+         ============================================================ -->
+    <section class="section section--alt contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">So erreichen Sie uns</span>
+          <!-- ÜBERSCHRIFT HIER ANPASSEN -->
+          <h2 class="section__title">Kontakt &amp; Erreichbarkeit</h2>
+          <p class="section__lead">
+            Oder buchen Sie direkt online – schnell und ohne Warteschleife.
+            <a href="#buchen" style="color:var(--color-secondary);font-weight:600;text-decoration:underline;"> Zum Buchungsblock ↑</a>
+          </p>
+        </div>
+
+        <div class="contact-info-row">
+
+          <div class="contact-info-card">
+            <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <h3 class="contact-info-card__title">Adresse</h3>
+              <address class="contact-info-card__text">
+                Brandstetter Montage-Service<br>
+                Erbstr. 6<br>
+                77704 Oberkirch-Nußbach
+              </address>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <div>
+              <h3 class="contact-info-card__title">Telefon &amp; E-Mail</h3>
+              <p class="contact-info-card__text">
+                <a href="tel:+4978054934120">07805 4934120</a><br>
+                <a href="mailto:kontakt@brandstetter-montage.de">kontakt@brandstetter-montage.de</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            <div>
+              <h3 class="contact-info-card__title">Erreichbarkeit</h3>
+              <dl class="hours-list">
+                <dt>Mo – Fr</dt><dd>Termine nach Vereinbarung</dd>
+                <dt>Samstag</dt><dd>auf Anfrage</dd>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ALLE INHALTE IN DEN SPALTEN HIER ANPASSEN.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <span style="display:inline-flex;background:#fff;border-radius:6px;padding:0.4rem 0.6rem;">
+            <img src="assets/logo-brandstetter.jpg" alt="Brandstetter Montage-Service Logo" height="28" />
+          </span>
+        </div>
+        <p class="footer-brand__desc">
+          dicht-o-fix, Möbelmontage, Trockenbau sowie Fertigparkett und Zimmertüren
+          im Renchtal – spezialisiert statt generalistisch, seit 2010.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#buchen">Termin buchen</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Erbstr. 6<br>77704 Oberkirch-Nußbach</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <a href="tel:+4978054934120">07805 4934120</a>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:kontakt@brandstetter-montage.de">kontakt@brandstetter-montage.de</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Erreichbarkeit</h3>
+        <dl class="footer-hours">
+          <dt>Mo – Fr</dt><dd>Termine nach Vereinbarung</dd>
+          <dt>Samstag</dt><dd>auf Anfrage</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <!-- COPYRIGHT HIER ANPASSEN -->
+        <p>&copy; 2026 Brandstetter Montage-Service. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <!-- IMPRESSUM & DATENSCHUTZ LINKS HIER ANPASSEN -->
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

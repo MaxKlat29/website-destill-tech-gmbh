@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Metallbau Langguth – Fahrzeuganhänger, RWA &amp; Geländer in Oberkirch</title>
+
+  <meta name="description" content="Metallbau Langguth in Oberkirch/Oppenau – Fahrzeuganhänger, Rauch- und Wärmeabzugsanlagen, Tageslichttechnik, Geländer und Metallbau. Zertifiziert nach DIN EN 1090 EXC 2." />
+
+  <!-- Google Fonts: Barlow Condensed + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll-Fortschrittsbalken (wird per JS befüllt) -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- Echtes Logo von langguth-montage.de (Wayback-Archiv) -->
+      <a href="#start" class="logo" aria-label="Metallbau Langguth – nach oben">
+        <img class="logo__icon" src="assets/images/logo-real.png" alt="Metallbau Langguth Logo" style="width:auto;height:44px;" />
+        <span class="logo__text">
+          <span class="logo__sub">Fahrzeuganhänger &middot; RWA &middot; Geländer &middot; Oberkirch</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Leistungen</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Referenzen</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">Über uns</a></li>
+          <li class="main-nav__item"><a href="#aktuelles">Aktuelles</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <a href="#kontakt" class="btn btn--primary">Angebot anfragen</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- ============================================================
+         1. HERO
+         ============================================================ -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <img
+          src="assets/images/gelaender-balkone-stuttgart-1.jpg"
+          alt="Echtes Projektfoto: saniertes Balkongeländer aus Metall"
+          width="1365" height="768"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="hero__tag">Metallbau aus dem Ortenaukreis</span>
+        <h1 class="hero__title">
+          Stahl nach Maß –<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero__lead">
+          Metallbau Langguth in Oberkirch/Oppenau – Ihr Fachbetrieb für Fahrzeuganhänger,
+          Rauch- und Wärmeabzugsanlagen, Tageslichttechnik, Geländer und Metallbau.
+          Zertifiziert nach DIN EN 1090 EXC 2 – für Privat- und Gewerbekunden.
+        </p>
+        <div class="hero__actions">
+          <a href="#leistungen" class="btn btn--primary btn--lg">Unsere Leistungen</a>
+          <a href="#kontakt" class="btn btn--outline-white btn--lg">Kostenlos anfragen</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#1A1F22;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F5F6F7"/></svg></div>
+
+    <!-- ============================================================
+         2. LEISTUNGEN
+         ============================================================ -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Was wir für Sie leisten</span>
+          <h2 class="section__title">Unsere Leistungen</h2>
+          <p class="section__lead">
+            Von der Werkstatt auf die Baustelle – wir fertigen und montieren Metallkonstruktionen
+            aller Art. Präzise, langlebig und auf Ihre Anforderungen zugeschnitten.
+          </p>
+        </div>
+
+        <!-- 4 LEISTUNGSKARTEN -->
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <!-- LEISTUNG 1: Fahrzeuganhänger -->
+          <div class="service-detail-card" id="anhaenger">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/anhaenger-blackforest-1.jpg"
+                alt="Echtes Projektfoto: Ausstellungsanhänger 'Black Forest Pearl' mit Motorrad"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Stahlträger / I-Profil -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="6" width="28" height="4" rx="1" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <rect x="4" y="26" width="28" height="4" rx="1" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <rect x="16" y="10" width="4" height="16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <span class="service-detail-card__tag">Fahrzeuganhänger</span>
+              <h3 class="service-detail-card__title">PKW-Anhänger nach Maß</h3>
+              <p class="service-detail-card__text">
+                Als Fachbetrieb im Fahrzeugbau kennen wir Ihre Anforderungen an PKW-Anhänger
+                und finden für jeden Bedarf die passende Transportlösung – inklusive
+                hochwertiger Serienausstattung und individuellem Zubehör, wie beim
+                Ausstellungsanhänger "Black Forest Pearl" mit Rahmen aus Edelstahl.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 2: RWA & Tageslichttechnik -->
+          <div class="service-detail-card" id="rwa">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/tageslichttechnik-1.jpg"
+                alt="Echtes Projektfoto: Lichtbänder auf einem Hallendach"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Treppe mit Geländer -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 30h6V24h6v-6h6v-6h6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="6" y1="6" x2="6" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="6" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="10" y1="5" x2="30" y2="5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <line x1="10" y1="5" x2="10" y2="30" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">RWA &amp; Tageslichttechnik</span>
+              <h3 class="service-detail-card__title">Rauch-, Wärmeabzug &amp; Lichtbänder</h3>
+              <p class="service-detail-card__text">
+                In Zusammenarbeit mit der Fa. Steinbrecher GmbH Kirchzarten montieren wir
+                Rauch- und Wärmeabzugsanlagen nach DIN 18232 sowie gewölbte Oberlichtbänder,
+                Sattellichtbänder und Shedverglasungen – auch für individuelle
+                Sanierungswünsche an Hallendächern.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 3: Geländer -->
+          <div class="service-detail-card" id="gelaender">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/gelaender-balkone-stuttgart-2.jpg"
+                alt="Echtes Projektfoto: sanierte Balkongeländer in Stuttgart"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Tor -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="8" width="13" height="20" rx="1" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <rect x="20" y="8" width="13" height="20" rx="1" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <line x1="3" y1="18" x2="16" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <line x1="20" y1="18" x2="33" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <circle cx="17" cy="18" r="1.5" fill="currentColor"/>
+                  <line x1="3" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="3" y1="31" x2="33" y2="31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">Geländer</span>
+              <h3 class="service-detail-card__title">Balkon-, Pergola- &amp; Stahltreppengeländer</h3>
+              <p class="service-detail-card__text">
+                Geländer für Balkone, Pergolen und Stahltreppen nach Maß - von der Sanierung
+                einzelner Balkone bis zu Großprojekten wie der Sanierung von 48 Balkonen
+                in Stuttgart. Langlebig, pflegeleicht und optisch ansprechend.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 4: Metallbau & Industrieservice -->
+          <div class="service-detail-card" id="metallbau">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/images/podest-konstruktion.jpg"
+                alt="Echtes Projektfoto: Podest-Konstruktion aus Stahl"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Schraubenschlüssel -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28 6l-4 4-2.5-2.5 4-4A6.5 6.5 0 0016 12L5 23a2.5 2.5 0 003.5 3.5L19.5 16A6.5 6.5 0 0028 6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <circle cx="9.5" cy="25.5" r="2" fill="currentColor"/>
+                  <path d="M22 14l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Metallbau &amp; Industrieservice</span>
+              <h3 class="service-detail-card__title">Schweißkonstruktionen &amp; Industrieservice</h3>
+              <p class="service-detail-card__text">
+                Schweißkonstruktionen in allen Verfahren bis 3200 kg, Montage und Fertigung
+                von Baugruppen sowie Industrieservice (Wartung und Reparatur von
+                Industriemaschinen) - zertifiziert nach DIN EN 1090 EXC 2, unter anderem
+                für Sonderanfertigungen wie einen Airbus-A380-Türflügel in Originalgröße
+                für DOLL Oppenau.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F5F6F7;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#EAECEE"/></svg></div>
+
+    <!-- ============================================================
+         3. REFERENZEN
+         ============================================================ -->
+    <section class="section section--alt" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Unsere Arbeit spricht für sich</span>
+          <h2 class="section__title">Ausgewählte Referenzprojekte</h2>
+          <p class="section__lead">
+            Einblick in Projekte, die wir mit Sorgfalt und handwerklicher Präzision umgesetzt haben.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-item">
+            <img src="assets/images/hero-doll-a380.jpg"
+              alt="Echtes Projektfoto: Sonderfahrzeug für DOLL Oppenau"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Airbus-A380-Türflügel für DOLL Oppenau</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/anhaenger-blackforest-2.jpg"
+              alt="Echtes Projektfoto: Ausstellungsanhänger 'Black Forest Pearl'"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Ausstellungsanhänger "Black Forest Pearl"</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/gelaender-balkone-stuttgart-2.jpg"
+              alt="Echtes Projektfoto: sanierte Balkongeländer in Stuttgart"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Sanierung 48 Balkone in Stuttgart</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/tageslichttechnik-2.jpg"
+              alt="Echtes Projektfoto: Lichtbänder und Lichtkuppeln auf einem Hallendach"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Lichtbänder &amp; Lichtkuppeln</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/fahrradueberdachung.jpg"
+              alt="Echtes Projektfoto: Fahrradüberdachung aus Stahl"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Fahrradüberdachung</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/images/podest-konstruktion.jpg"
+              alt="Echtes Projektfoto: Podest-Konstruktion aus Stahl"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Podest-Konstruktion</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#EAECEE;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F5F6F7"/></svg></div>
+
+    <!-- ============================================================
+         4. ÜBER UNS
+         ============================================================ -->
+    <section class="section" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <h2 class="section__title">Über uns</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Unser Betrieb</span>
+            <h3 class="about-content__title">Metallbau mit Erfahrung und Leidenschaft</h3>
+            <p class="about-content__text">
+              Metallbau Langguth steht für handwerkliche Präzision und persönlichen Service.
+              Unser Team ist zertifiziert nach DIN EN 1090 EXC 2 und vereint Schweißfachleute
+              nach DVS-EWF, Industriemeister Metall und geprüfte Schweißer unter einem Dach -
+              vom Büro in Oberkirch bis zur Werkstatt in Oppenau.
+            </p>
+            <p class="about-content__text">
+              Von der ersten Beratung über Konstruktion und Fertigung bis zur kompletten
+              Montage vor Ort – alles kommt aus einer Hand. So entstehen Metallarbeiten,
+              die nicht nur funktionieren, sondern auch über Jahre ihre Qualität behalten.
+            </p>
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Zertifiziert nach DIN EN 1090 EXC 2
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Fertigung und Montage aus einer Hand
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Für Privat- und Gewerbekunden im Ortenaukreis
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="assets/images/firmenwagen-langguth.jpg"
+              alt="Echtes Projektfoto: Firmenfahrzeug und Podest-Anhänger von Metallbau Langguth"
+              width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen-Balken -->
+    <div class="stats-bar" aria-label="Unsere Kennzahlen">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__number">DIN EN 1090</div>
+            <div class="stat-item__label">zertifiziert nach EXC 2</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number">2 Standorte</div>
+            <div class="stat-item__label">Oberkirch &amp; Oppenau</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="100" data-suffix="%">100&nbsp;%</div>
+            <div class="stat-item__label">Eigenleistung aus der Werkstatt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <section class="section section--alt" aria-label="Team">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Die Menschen hinter dem Betrieb</span>
+          <h3 class="section__title">Unser Team</h3>
+        </div>
+
+        <div class="team-grid">
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="ml-clip1"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#2D3436"/>
+              <g clip-path="url(#ml-clip1)" fill="#F5F6F7" opacity="0.9">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="ml-clip2"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#2D3436"/>
+              <g clip-path="url(#ml-clip2)" fill="#F5F6F7" opacity="0.9">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="ml-clip3"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#2D3436"/>
+              <g clip-path="url(#ml-clip3)" fill="#F5F6F7" opacity="0.9">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#EAECEE;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F5F6F7"/></svg></div>
+
+    <!-- ============================================================
+         5. AKTUELLES
+         ============================================================ -->
+    <section class="section" id="aktuelles">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Neuigkeiten &amp; Projekte</span>
+          <h2 class="section__title">Aktuelles aus dem Betrieb</h2>
+          <p class="section__lead">
+            Einblicke in aktuelle Projekte und Wissenswertes rund um Metallbau und Montage –
+            direkt aus der Werkstatt Oberkirch.
+          </p>
+        </div>
+
+        <!-- TODO: Echte, aktuelle Projekt-News von Metallbau Langguth einholen -->
+        <p style="text-align:center;color:var(--color-text-muted);font-size:0.85rem;font-style:italic;margin-bottom:2rem;">
+          Beispielhafte Darstellung – diese Beiträge werden durch echte, aktuelle Projekt-Neuigkeiten ersetzt, sobald diese vorliegen.
+        </p>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/images/gelaender-balkone-stuttgart-1.jpg"
+                alt="Echtes Projektfoto: sanierte Balkongeländer in Stuttgart"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2026-05-10">10. Mai 2026</time>
+                <span class="news-card__cat">Projekt</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Balkongeländer-Sanierung für Mehrfamilienhaus fertiggestellt</a></h3>
+              <p class="news-card__text">
+                Maßgefertigte Balkongeländer für ein Mehrfamilienhaus – von der
+                Aufmaßnahme bis zur Endmontage in weniger als zwei Wochen. Sauber, schnell,
+                langlebig.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/images/tageslichttechnik-1.jpg"
+                alt="Echtes Projektfoto: Lichtbänder auf einem Hallendach"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2026-03-22">22. März 2026</time>
+                <span class="news-card__cat">Projekt</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Lichtbänder-Sanierung für Gewerbebetrieb im Renchtal</a></h3>
+              <p class="news-card__text">
+                Für einen Betrieb im Renchtal haben wir gewölbte Oberlichtbänder auf dem
+                Hallendach saniert. In Zusammenarbeit mit Fa. Steinbrecher GmbH Kirchzarten.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/images/fahrradueberdachung.jpg"
+                alt="Echtes Projektfoto: Fahrradüberdachung aus Stahl"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2025-11-05">5. November 2025</time>
+                <span class="news-card__cat">Projekt</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Fahrradüberdachung aus Stahl – robust durch den Winter</a></h3>
+              <p class="news-card__text">
+                Eine Stahlüberdachung für Fahrräder, schneelaststabil und feuerverzinkt. Aufgestellt
+                an einem Wochenende – fertig für die kalte Jahreszeit. Anfragen gerne jederzeit.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. KONTAKT
+         ============================================================ -->
+    <section class="section contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Nehmen Sie Kontakt auf</span>
+          <h2 class="section__title">Wir freuen uns auf Ihr Projekt</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- KONTAKTFORMULAR -->
+          <!-- TODO: Formspree-Endpunkt in js/main.js eintragen -->
+          <form class="contact-form" id="kontaktformular" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">Ihr Name <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+              <input class="form-control" type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="07802 12 34 56" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="betreff">Betreff</label>
+              <input class="form-control" type="text" id="betreff" name="betreff" placeholder="z. B. Geländer – Einfamilienhaus" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachricht">Ihre Nachricht <span aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="nachricht" name="nachricht" required placeholder="Beschreiben Sie kurz Ihr Vorhaben …"></textarea>
+            </div>
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+              Mit dem Absenden stimmen Sie unserer
+              <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerklärung</a> zu.
+            </p>
+            <button type="submit" class="btn btn--primary btn--lg">Nachricht absenden</button>
+          </form>
+
+          <!-- KONTAKTINFORMATIONEN -->
+          <div class="contact-info">
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Adresse</h3>
+                <address class="contact-info-card__text">
+                  Metallbau Langguth<br>
+                  Kindergartenstr. 4b<br>
+                  77704 Oberkirch
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Telefon &amp; E-Mail</h3>
+                <p class="contact-info-card__text">
+                  <a href="tel:+4978027063888">+49 7802 7063888</a><br>
+                  <a href="mailto:info@langguth-montage.de">info@langguth-montage.de</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Öffnungszeiten</h3>
+                <!-- TODO: Öffnungszeiten beim Kunden erfragen -->
+                <dl class="hours-list">
+                  <dt>Mo – Fr</dt><dd>nach Vereinbarung</dd>
+                  <dt>Samstag</dt><dd>nach Vereinbarung</dd>
+                  <dt>Sonntag</dt><dd>Geschlossen</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <img src="assets/images/logo-real.png" alt="Metallbau Langguth Logo" style="width:auto;height:40px;" />
+        </div>
+        <p class="footer-brand__desc">
+          Fachbetrieb für Fahrzeuganhänger, RWA, Tageslichttechnik, Geländer und
+          Metallbau in Oberkirch/Oppenau – präzise Metallarbeiten aus einer Hand.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#aktuelles">Aktuelles</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Kindergartenstr. 4b<br>77704 Oberkirch</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <a href="tel:+4978027063888">+49 7802 7063888</a>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:info@langguth-montage.de">info@langguth-montage.de</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Öffnungszeiten</h3>
+        <!-- TODO: Öffnungszeiten bestätigen -->
+        <dl class="footer-hours">
+          <dt>Mo – Fr</dt><dd>nach Vereinbarung</dd>
+          <dt>Sa – So</dt><dd>Geschlossen</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; 2026 Metallbau Langguth – Marcus Langguth. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

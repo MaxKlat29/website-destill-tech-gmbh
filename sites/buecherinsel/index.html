@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Buchhandlung B&uuml;cherinsel Oberkirch &ndash; Ihr lokaler Buchhandel</title>
+
+  <meta name="description" content="Buchhandlung B&uuml;cherinsel in Oberkirch &ndash; Ihr pers&ouml;nlicher Buchhandel mit gro&szlig;em Sortiment, Leseempfehlungen und Veranstaltungen. Bahnhofstra&szlig;e 4, 77704 Oberkirch." />
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#start" class="logo" aria-label="B&uuml;cherinsel Oberkirch &ndash; nach oben">
+        <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="8" fill="#2A3855"/>
+          <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#D4961A">BI</text>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name">B&uuml;cherinsel</span>
+          <span class="logo__sub">Buchhandlung &middot; Oberkirch</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Men&uuml; &ouml;ffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Sortiment</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Empfehlungen</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">&Uuml;ber uns</a></li>
+          <li class="main-nav__item"><a href="#aktuelles">Veranstaltungen</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <a href="#kontakt" class="btn btn--primary">Kontakt aufnehmen</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- 1. HERO -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <img
+          src="assets/hero-buchhandlung.jpg"
+          alt="Gem&uuml;tliche Buchhandlung mit gef&uuml;llten Regalen"
+          width="1600" height="900"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="hero__tag">Ihr Buchhandel in Oberkirch</span>
+        <h1 class="hero__title">
+          Entdecken Sie B&uuml;cher &ndash;<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero__lead">
+          Die B&uuml;cherinsel in Oberkirch ist Ihr pers&ouml;nlicher Buchhandel &ndash; mit
+          einem gro&szlig;en Sortiment, pers&ouml;nlichen Leseempfehlungen und einer
+          Leidenschaft f&uuml;r gute B&uuml;cher. Seit Jahren Ihre Anlaufstelle
+          f&uuml;r Belletristik, Sachb&uuml;cher, Kinderliteratur und mehr.
+        </p>
+        <div class="hero__actions">
+          <a href="#leistungen" class="btn btn--primary btn--lg">Unser Sortiment</a>
+          <a href="#kontakt" class="btn btn--outline-white btn--lg">Uns besuchen</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#1A2534;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FDFAF5"/></svg></div>
+
+    <!-- 2. SORTIMENT / LEISTUNGEN -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">F&uuml;r jeden das richtige Buch</span>
+          <h2 class="section__title">Unser Sortiment</h2>
+          <p class="section__lead">
+            Von Bestsellern bis Geheimtipps, von Bilderbuch bis Fachbuch &ndash;
+            die B&uuml;cherinsel h&auml;lt f&uuml;r jeden Leser das Passende bereit.
+            Und wenn wir es nicht vorr&auml;tig haben, besorgen wir es schnell.
+          </p>
+        </div>
+
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <!-- LEISTUNG 1: Belletristik -->
+          <div class="service-detail-card" id="belletristik">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/leistung-belletristik.jpg"
+                alt="Stapel bunter Romane und Erz&auml;hlungen"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: offenes Buch -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6h12a3 3 0 013 3v18a3 3 0 00-3-3H4V6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M32 6H20a3 3 0 00-3 3v18a3 3 0 013-3h12V6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <line x1="19" y1="6" x2="17" y2="24" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <span class="service-detail-card__tag">Belletristik</span>
+              <h3 class="service-detail-card__title">Romane &amp; Erz&auml;hlungen &ndash; Welten, die Sie mitrei&szlig;en</h3>
+              <p class="service-detail-card__text">
+                Ob preisgekr&ouml;nte Literatur, aktuelle Bestseller oder spannende
+                Genre-Romane &ndash; unsere Auswahl an Hardcovern, Taschenb&uuml;chern
+                und E-Books umfasst alle Facetten der Erz&auml;hlkunst. Wir helfen
+                Ihnen, Ihren n&auml;chsten Lieblingsroman zu finden.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Uns besuchen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 2: Kinderbücher & Jugendliteratur -->
+          <div class="service-detail-card" id="kinderbucher">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/leistung-kinderbuecher.jpg"
+                alt="Farbenfrohe Kinderb&uuml;cher und Bilderbücher"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Stern / Lesekind -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 4l3.3 6.7L29 12l-5.5 5.4L24.6 25 18 21.6 11.4 25l1.1-7.6L7 12l7.7-1.3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M10 28h16M13 32h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">Kinder &amp; Jugend</span>
+              <h3 class="service-detail-card__title">Kinder- &amp; Jugendb&uuml;cher &ndash; Lesen von Anfang an</h3>
+              <p class="service-detail-card__text">
+                Bilderbücher für die Kleinsten, Erstlesebücher, Kinderkrimis, Fantasy-Reihen
+                und New-Adult-Literatur f&uuml;r Jugendliche &ndash; unsere Kinder- und
+                Jugendabteilung bietet alles, was Lesenachwuchs bgeistert. Gerne
+                beraten wir Sie f&uuml;r ein passendes Geschenk.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Uns besuchen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 3: Sachbücher & Ratgeber -->
+          <div class="service-detail-card" id="sachbuecher">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/leistung-sachbuecher.jpg"
+                alt="Sachb&uuml;cher und Ratgeber verschiedener Themengebiete"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Glühbirne/Wissen -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 4a9 9 0 016 15.7V24H12v-4.3A9 9 0 0118 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <rect x="13" y="26" width="10" height="3" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="15.5" y1="31" x2="20.5" y2="31" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <line x1="18" y1="8" x2="18" y2="15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">Sachb&uuml;cher</span>
+              <h3 class="service-detail-card__title">Sachb&uuml;cher &amp; Ratgeber &ndash; Wissen f&uuml;r jeden Bereich</h3>
+              <p class="service-detail-card__text">
+                Geschichte, Wissenschaft, Psychologie, Kochen, Reise, Sport, Gesundheit,
+                Biographien &ndash; unser Sachbuchsortiment deckt alle Wissensgebiete ab.
+                Egal ob Sie etwas Bestimmtes suchen oder einfach st&ouml;bern m&ouml;chten &ndash;
+                bei uns werden Sie f&uuml;ndig.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Uns besuchen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 4: Lesungen & Veranstaltungen -->
+          <div class="service-detail-card" id="veranstaltungen">
+            <div class="service-detail-card__image-wrap">
+              <img class="service-detail-card__image"
+                src="assets/leistung-veranstaltungen.jpg"
+                alt="Autorenlesung in der Buchhandlung mit interessiertem Publikum"
+                width="800" height="500" loading="lazy" />
+              <div class="service-detail-card__icon-wrap" aria-hidden="true">
+                <!-- SVG: Mikrofon/Vortrag -->
+                <svg class="service-detail-card__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="13" y="4" width="10" height="14" rx="5" stroke="currentColor" stroke-width="2"/>
+                  <path d="M7 18a11 11 0 0022 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="18" y1="29" x2="18" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="12" y1="34" x2="24" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Lesungen &amp; Events</span>
+              <h3 class="service-detail-card__title">Veranstaltungen &ndash; wo B&uuml;cher lebendig werden</h3>
+              <p class="service-detail-card__text">
+                Autorenlesungen, Signierstunden, Kinderbuch-Vorlesenachmittage und
+                thematische B&uuml;cherabende &ndash; bei der B&uuml;cherinsel sind B&uuml;cher
+                mehr als nur Papier und Tinte. Wir schaffen Begegnungen zwischen
+                Lesern, Autoren und Geschichten.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Uns besuchen</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#FDFAF5;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F5EDE0"/></svg></div>
+
+    <!-- 3. EMPFEHLUNGEN / REFERENZEN -->
+    <section class="section section--alt" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Unsere Leseempfehlungen</span>
+          <h2 class="section__title">B&uuml;cher der Woche</h2>
+          <p class="section__lead">
+            Unsere aktuellen Favoriten &ndash; handverlesen und w&auml;rmstens empfohlen.
+            Kommen Sie vorbei und lassen Sie sich inspirieren.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-item">
+            <img src="assets/leistung-belletristik.jpg"
+              alt="Aktueller Bestseller Belletristik"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Buch der Woche &ndash; Belletristik</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/leistung-kinderbuecher.jpg"
+              alt="Empfohlenes Kinderbuch"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Kinderbuch-Tipp</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/leistung-sachbuecher.jpg"
+              alt="Empfohlenes Sachbuch"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Sachbuch-Empfehlung</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/ref-spiegel-bestseller.jpg"
+              alt="SPIEGEL-Bestseller der Woche"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">SPIEGEL-Bestseller</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/ref-jugendbuch.jpg"
+              alt="Jugendbuch-Empfehlung"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Jugendbuch-Tipp</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="assets/ref-regionaler-tipp.jpg"
+              alt="Regionaler Geheimtipp"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Regionaler Geheimtipp</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F5EDE0;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#FDFAF5"/></svg></div>
+
+    <!-- 4. UEBER UNS -->
+    <section class="section" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <h2 class="section__title">&Uuml;ber uns</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Unsere Geschichte</span>
+            <h3 class="about-content__title">Eine Buchhandlung mit Herz &ndash; mitten in Oberkirch</h3>
+            <p class="about-content__text">
+              Die B&uuml;cherinsel in der Bahnhofstra&szlig;e 4 gibt es seit dem Jahr 2000 &ndash;
+              sie ist mehr als ein Buchgesch&auml;ft, sondern ein Ort der Begegnung, der
+              Inspiration und der Leselust auf rund 100 Quadratmetern. Wir kennen unser
+              Sortiment und unsere Kunden &ndash; und helfen Ihnen pers&ouml;nlich dabei,
+              das richtige Buch zu finden.
+            </p>
+            <p class="about-content__text">
+              Ob Sie gezielt nach einem Titel suchen, ein Geschenk ben&ouml;tigen oder
+              einfach st&ouml;bern und sich beraten lassen m&ouml;chten: Bei uns sind Sie
+              willkommen. Unser Online-Shop erg&auml;nzt den Ladenbesuch und erm&ouml;glicht
+              Bestellungen bequem von zu Hause.
+            </p>
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Gro&szlig;es Sortiment &ndash; Belletristik, Sachbuch, Kinder und mehr
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Pers&ouml;nliche Beratung und Leseempfehlungen
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Autorenlesungen und Buchveranstaltungen
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-image">
+            <img
+              src="assets/ueber-uns-regal.jpg"
+              alt="Gem&uuml;tliches B&uuml;cherregal mit Leiter in der B&uuml;cherinsel"
+              width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen -->
+    <div class="stats-bar" aria-label="Unsere Kennzahlen">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-item__number">seit 2000</div>
+            <div class="stat-item__label">Ihre Buchhandlung in Oberkirch</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="6">6</div>
+            <div class="stat-item__label">Tage die Woche ge&ouml;ffnet</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="1">1</div>
+            <div class="stat-item__label">Werktag Lieferzeit bei Bestellungen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <section class="section section--alt" aria-label="Team">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Die Menschen hinter der B&uuml;cherinsel</span>
+          <h3 class="section__title">Unser Team</h3>
+        </div>
+
+        <div class="team-grid">
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="teamclip-1"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#2A3855"/>
+              <g clip-path="url(#teamclip-1)" fill="#FDFAF5" opacity="0.9">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="teamclip-2"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#2A3855"/>
+              <g clip-path="url(#teamclip-2)" fill="#FDFAF5" opacity="0.9">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+          <div class="team-card">
+            <svg class="team-card__photo" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <defs><clipPath id="teamclip-3"><circle cx="75" cy="75" r="75"/></clipPath></defs>
+              <circle cx="75" cy="75" r="75" fill="#2A3855"/>
+              <g clip-path="url(#teamclip-3)" fill="#FDFAF5" opacity="0.9">
+                <circle cx="75" cy="58" r="24"/>
+                <path d="M15 150c0-33.1 26.9-60 60-60s60 26.9 60 60"/>
+              </g>
+            </svg>
+            <p class="team-card__photo-note" style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:0.5rem;">Ansprechpartner folgt</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F5EDE0;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#FDFAF5"/></svg></div>
+
+    <!-- 5. AKTUELLES / VERANSTALTUNGEN -->
+    <section class="section" id="aktuelles">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Termine &amp; Neuigkeiten</span>
+          <h2 class="section__title">Veranstaltungen &amp; Aktuelles</h2>
+          <p class="section__lead">
+            Lesungen, Neuerscheinungen und Highlights aus der B&uuml;cherinsel &ndash;
+            bleiben Sie auf dem Laufenden.
+          </p>
+        </div>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/leistung-veranstaltungen.jpg"
+                alt="Lesung in der B&uuml;cherinsel Oberkirch"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2026-11-05">5. November 2026</time>
+                <span class="news-card__cat">Lesung</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">„Sonnenberg&ldquo; &ndash; Lesung mit Brigitte Glaser</a></h3>
+              <p class="news-card__text">
+                Um 20:00 Uhr liest Brigitte Glaser aus ihrem Roman &uuml;ber zwei Frauen,
+                die Mitte der 1970er Jahre f&uuml;r ihre Zukunft k&auml;mpfen &ndash;
+                Johanna, die als Erste ihrer Familie studiert, und ihre Freundin Luzie.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr erfahren
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/ref-jugendbuch.jpg"
+                alt="Signierstunde in der B&uuml;cherinsel Oberkirch"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2024-07-12">12. Juli 2024</time>
+                <span class="news-card__cat">Signierstunde</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Signierstunde mit Heidrun Hurst</a></h3>
+              <p class="news-card__text">
+                Bei uns im Laden signierte Heidrun Hurst ihre B&uuml;cher pers&ouml;nlich
+                f&uuml;r ihre Leserinnen und Leser &ndash; ein sch&ouml;ner Nachmittag
+                mit viel Zeit f&uuml;r Gespr&auml;che.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr erfahren
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="assets/ref-regionaler-tipp.jpg"
+                alt="Lesung Die Rosenholzvilla in der B&uuml;cherinsel Oberkirch"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2024-04-11">11. April 2024</time>
+                <span class="news-card__cat">Lesung</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">„Die Rosenholzvilla&ldquo; &ndash; Lesung mit Tabea Bach</a></h3>
+              <p class="news-card__text">
+                Tabea Bach las bei uns aus ihrem Roman &bdquo;Die Rosenholzvilla&ldquo;
+                &ndash; in gem&uuml;tlicher Atmosph&auml;re mit anschlie&szlig;ender
+                Signierung.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr erfahren
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. KONTAKT -->
+    <section class="section contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wir freuen uns auf Ihren Besuch</span>
+          <h2 class="section__title">Kontakt &amp; &Ouml;ffnungszeiten</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- TODO: Formspree-Endpunkt einbauen -->
+          <form class="contact-form" id="kontaktformular" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">Ihr Name <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+              <input class="form-control" type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="07802 12 34 56" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="betreff">Betreff</label>
+              <input class="form-control" type="text" id="betreff" name="betreff" placeholder="z. B. Buchbestellung, Veranstaltungsanfrage" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachricht">Ihre Nachricht <span aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="nachricht" name="nachricht" required placeholder="Wie k&ouml;nnen wir Ihnen helfen? &hellip;"></textarea>
+            </div>
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+              Mit dem Absenden stimmen Sie unserer
+              <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerkl&auml;rung</a> zu.
+            </p>
+            <button type="submit" class="btn btn--primary btn--lg">Nachricht absenden</button>
+          </form>
+
+          <div class="contact-info">
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Adresse</h3>
+                <address class="contact-info-card__text">
+                  Buchhandlung B&uuml;cherinsel<br>
+                  Bahnhofstra&szlig;e 4<br>
+                  77704 Oberkirch
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Telefon &amp; E-Mail</h3>
+                <p class="contact-info-card__text">
+                  <a href="tel:+497802701761">07802 701761</a><br>
+                  <a href="mailto:info@buecherinsel.org">info@buecherinsel.org</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">&Ouml;ffnungszeiten</h3>
+                <dl class="hours-list">
+                  <dt>Mo &ndash; Fr</dt><dd>08:30 &ndash; 18:30 Uhr</dd>
+                  <dt>Samstag</dt><dd>08:30 &ndash; 16:00 Uhr</dd>
+                  <dt>Sonntag</dt><dd>Geschlossen</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="8" fill="#2A3855"/>
+            <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#D4961A">BI</text>
+          </svg>
+          <span class="footer-brand__name">B&uuml;cherinsel</span>
+        </div>
+        <p class="footer-brand__desc">
+          Buchhandlung B&uuml;cherinsel in Oberkirch &ndash; Ihr pers&ouml;nlicher Buchhandel
+          mit gro&szlig;em Sortiment, Leseempfehlungen und Veranstaltungen.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Sortiment</a></li>
+            <li><a href="#referenzen">Empfehlungen</a></li>
+            <li><a href="#ueber-uns">&Uuml;ber uns</a></li>
+            <li><a href="#aktuelles">Veranstaltungen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Bahnhofstra&szlig;e 4<br>77704 Oberkirch</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <a href="tel:+497802701761">07802 701761</a>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:info@buecherinsel.org">info@buecherinsel.org</a>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">&Ouml;ffnungszeiten</h3>
+        <dl class="footer-hours">
+          <dt>Mo &ndash; Fr</dt><dd>08:30 &ndash; 18:30 Uhr</dd>
+          <dt>Samstag</dt><dd>08:30 &ndash; 16:00 Uhr</dd>
+          <dt>Sonntag</dt><dd>Geschlossen</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; 2026 Buchhandlung B&uuml;cherinsel. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="#">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

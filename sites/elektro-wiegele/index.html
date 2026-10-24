@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Elektro Wiegele – Ihr Elektriker im Renchtal</title>
+
+  <meta name="description" content="Elektro Wiegele aus Lautenbach – Ihr Innungsfachbetrieb für Elektroinstallation, Photovoltaik, Wärmepumpen und E-Check im Renchtal. Elektrotechnikermeister. Jetzt anfragen: 07802 4671." />
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll-Fortschrittsbalken (wird per JS befüllt) -->
+  <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <a href="#start" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- LOGO: Initialen EW + Firmenname -->
+      <a href="#start" class="logo" aria-label="Elektro Wiegele – nach oben">
+        <svg class="logo__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="8" fill="#1B3A6B"/>
+          <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#F5C518">EW</text>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name">Elektro Wiegele</span>
+          <span class="logo__sub">Elektrobetrieb &middot; Lautenbach</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <ul class="main-nav__list" role="list">
+          <li class="main-nav__item"><a href="#leistungen">Leistungen</a></li>
+          <li class="main-nav__item"><a href="#referenzen">Referenzen</a></li>
+          <li class="main-nav__item"><a href="#ueber-uns">Über uns</a></li>
+          <li class="main-nav__item"><a href="#aktuelles">Aktuelles</a></li>
+        </ul>
+        <div class="main-nav__cta">
+          <a href="#kontakt" class="btn btn--primary">Kontakt aufnehmen</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="start">
+
+    <!-- ============================================================
+         1. HERO
+         ============================================================ -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero__image" aria-hidden="true">
+        <!-- TODO: Hero-Bild durch echtes Betriebsfoto austauschen (min. 1600 × 900 px) -->
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661911021547-b0188f22d548?w=1600&h=900&fit=crop&auto=format&q=80"
+          alt="Elektriker bei der Arbeit an einer Unterverteilung"
+          width="1600" height="900"
+          loading="eager" fetchpriority="high"
+        />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <span class="hero__tag">Ihr Innungsfachbetrieb im Renchtal</span>
+        <!-- Typewriter-Phrasen: in js/main.js angepasst -->
+        <h1 class="hero__title">
+          Strom für Ihr Zuhause –<br>
+          <span class="hero__typed" aria-live="polite"></span><span class="hero__typed-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero__lead">
+          Als Innungsfachbetrieb mit Elektrotechnikermeister realisieren wir Ihre
+          Elektroinstallationen zuverlässig, sicher und nach neuesten Standards –
+          im Renchtal und der Ortenau seit Generationen.
+        </p>
+        <div class="hero__actions">
+          <a href="#leistungen" class="btn btn--primary btn--lg">Unsere Leistungen</a>
+          <a href="#kontakt" class="btn btn--outline-white btn--lg">Kostenlos anfragen</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#0F1E3C;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F6F9FD"/></svg></div>
+
+    <!-- ============================================================
+         2. LEISTUNGEN
+         ============================================================ -->
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Was wir für Sie leisten</span>
+          <h2 class="section__title">Unsere Leistungen</h2>
+          <p class="section__lead">
+            Von der klassischen Elektroinstallation bis zur modernen Photovoltaikanlage –
+            wir übernehmen Ihr Projekt komplett, sicher und nach Vorschrift.
+          </p>
+        </div>
+
+        <!-- 4 LEISTUNGSKARTEN -->
+        <div class="grid-2" style="gap: 2rem; margin-bottom: 4rem;">
+
+          <!-- LEISTUNG 1: Elektroinstallation -->
+          <div class="service-detail-card" id="elektroinstallation">
+            <div class="service-detail-card__image-wrap">
+              <!-- TODO: Bild durch echtes Projektfoto austauschen (800 × 500 px) -->
+              <img class="service-detail-card__image"
+                src="https://plus.unsplash.com/premium_photo-1750887241483-f56eacfda779?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Elektriker verdrahtet eine Unterverteilung"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">01</span>
+              <span class="service-detail-card__tag">Elektroinstallation</span>
+              <h3 class="service-detail-card__title">Elektroinstallation – sicher verdrahtet, normgerecht ausgeführt</h3>
+              <p class="service-detail-card__text">
+                Ob Neubau, Anbau oder Sanierung: Wir planen und führen Ihre komplette
+                Elektroinstallation nach aktueller VDE-Norm aus. Unterverteilungen,
+                Leitungsverlegung, Steckdosen, Beleuchtung, Außenanlagen – alles aus
+                einer Hand, zuverlässig dokumentiert und abnahmebereit übergeben.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 2: Photovoltaik & Wärmepumpe -->
+          <div class="service-detail-card" id="photovoltaik">
+            <div class="service-detail-card__image-wrap">
+              <!-- TODO: Bild durch echtes PV-Projekt austauschen -->
+              <img class="service-detail-card__image"
+                src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Photovoltaikanlage auf Hausdach im Renchtal"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">02</span>
+              <span class="service-detail-card__tag">Photovoltaik &amp; Wärmepumpe</span>
+              <h3 class="service-detail-card__title">Zukunftsenergien – Strom selbst erzeugen, Heizen mit Effizienz</h3>
+              <p class="service-detail-card__text">
+                Wir installieren Photovoltaikanlagen und Wärmepumpen fachgerecht –
+                von der Planung und Anmeldung beim Netzbetreiber bis zur Inbetriebnahme
+                und Einweisung. So machen wir Ihr Haus unabhängiger, reduzieren
+                Energiekosten und steigern den Wert Ihrer Immobilie.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 3: E-Check & Sicherheitsprüfung -->
+          <div class="service-detail-card" id="echeck">
+            <div class="service-detail-card__image-wrap">
+              <!-- TODO: Bild durch echtes E-Check-Foto austauschen -->
+              <img class="service-detail-card__image"
+                src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Elektriker prüft Sicherungskasten beim E-CHECK"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">03</span>
+              <span class="service-detail-card__tag">E-CHECK &amp; Sicherheitsprüfung</span>
+              <h3 class="service-detail-card__title">E-CHECK – Schutz für Mensch und Anlage</h3>
+              <p class="service-detail-card__text">
+                Als E-CHECK-zertifizierter Innungsbetrieb prüfen wir Ihre elektrischen
+                Anlagen systematisch auf Sicherheit und Normkonformität. Der E-CHECK
+                schützt vor Bränden und Stromunfällen, wird von Versicherungen anerkannt
+                und ist für Vermieter sowie PV-Anlagenbetreiber besonders empfehlenswert.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+          <!-- LEISTUNG 4: Datennetz & Elektroreparaturen -->
+          <div class="service-detail-card" id="datennetz">
+            <div class="service-detail-card__image-wrap">
+              <!-- TODO: Bild durch echtes Netzwerk-/Reparaturfoto austauschen -->
+              <img class="service-detail-card__image"
+                src="https://plus.unsplash.com/premium_photo-1682145181120-73cfdfc8a36d?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Datennetzinstallation und Netzwerkverkabelung"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="service-detail-card__body">
+              <span class="service-detail-card__bg-num" aria-hidden="true">04</span>
+              <span class="service-detail-card__tag">Datennetz &amp; Reparaturen</span>
+              <h3 class="service-detail-card__title">Netzwerk, Energieberatung &amp; schnelle Reparaturen</h3>
+              <p class="service-detail-card__text">
+                Wir verlegen strukturierte Datennetze (LAN, WLAN-Vorbereitung),
+                schließen Küchen und Haushaltsgeräte fachgerecht an und beheben
+                Elektroschäden schnell und unkompliziert. Auch Energieberatung
+                für Sanierungsvorhaben bieten wir als zertifizierter Fachbetrieb an.
+              </p>
+              <a href="#kontakt" class="btn btn--cta">Jetzt anfragen</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#F6F9FD;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#E8EFF8"/></svg></div>
+
+    <!-- ============================================================
+         3. REFERENZEN
+         ============================================================ -->
+    <section class="section section--alt" id="referenzen">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Unsere Arbeit spricht für sich</span>
+          <h2 class="section__title">Ausgewählte Referenzprojekte</h2>
+          <p class="section__lead">
+            Einblick in Projekte, die wir mit Sorgfalt und Fachkompetenz im Renchtal und Umgebung umgesetzt haben.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- TODO: Bilder durch echte Projektfotos austauschen (600 × 450 px) -->
+          <div class="project-item">
+            <img src="https://plus.unsplash.com/premium_photo-1750890890026-a81bd4f67e4c?w=600&h=450&fit=crop&auto=format&q=80"
+              alt="Elektroinstallation Neubau Einfamilienhaus Lautenbach"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Neubau EFH Lautenbach</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?w=600&h=450&fit=crop&auto=format&q=80"
+              alt="Photovoltaikanlage auf Wohngebäude im Renchtal"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">PV-Anlage Renchtal</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.unsplash.com/photo-1776860150272-653efc74193c?w=600&h=450&fit=crop&auto=format&q=80"
+              alt="Wärmepumpeninstallation Privathaus"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Wärmepumpe Privathaus</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://plus.unsplash.com/premium_photo-1750887241483-f56eacfda779?w=600&h=450&fit=crop&auto=format&q=80"
+              alt="Gewerbeinstallation Betrieb Ortenaukreis"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Gewerbeinstallation Ortenau</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://plus.unsplash.com/premium_photo-1682145181120-73cfdfc8a36d?w=600&h=450&fit=crop&auto=format&q=80"
+              alt="Smart-Home-Verkabelung und Netzwerkinstallation"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">Smart Home &amp; Datennetz</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=600&h=450&fit=crop&auto=format&q=80"
+              alt="E-CHECK und Sanierung Altbau-Elektrik"
+              width="600" height="450" loading="lazy" />
+            <div class="project-item__overlay">
+              <span class="project-item__label">E-CHECK Altbausanierung</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#E8EFF8;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,60 480,0 720,30 C960,60 1120,0 1440,30 L1440,60 L0,60 Z" fill="#F6F9FD"/></svg></div>
+
+    <!-- ============================================================
+         4. ÜBER UNS
+         ============================================================ -->
+    <section class="section" id="ueber-uns">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Wer wir sind</span>
+          <h2 class="section__title">Über uns</h2>
+        </div>
+
+        <!-- Firmengeschichte: Text + Foto -->
+        <div class="about-grid">
+          <div>
+            <span class="about-content__tag">Unser Betrieb</span>
+            <h3 class="about-content__title">Elektriker mit Wurzeln im Renchtal</h3>
+            <p class="about-content__text">
+              Elektro Wiegele ist ein familiengeführter Elektrobetrieb aus Lautenbach-Vorder-Winterbach
+              im Renchtal. Über Generationen haben wir uns als verlässlicher Ansprechpartner für
+              Privathaushalte und Gewerbebetriebe im Ortenaukreis etabliert – mit dem Anspruch,
+              jede Arbeit so auszuführen, wie wir sie uns selbst im eigenen Zuhause wünschen würden.
+            </p>
+            <p class="about-content__text">
+              Als eingetragener Innungsfachbetrieb der Elektroinnung Mittelbaden arbeiten wir
+              ausschließlich nach aktuellen VDE-Normen und bilden uns regelmäßig weiter –
+              besonders in den Bereichen erneuerbare Energien, Photovoltaik und Wärmepumpen.
+              <!-- TODO: Gründungsjahr und weitere Firmengeschichte ergänzen -->
+            </p>
+            <ul style="list-style:none;padding:0;margin-top:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Innungsfachbetrieb – Elektroinnung Mittelbaden
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                E-CHECK-zertifizierter Fachbetrieb (inkl. PV-Anlagen)
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Meisterbetrieb – Elektrotechnikermeister vor Ort
+              </li>
+            </ul>
+          </div>
+
+          <!-- TODO: Teamfoto durch echtes Betriebsfoto austauschen (800 × 600 px) -->
+          <div class="about-image">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1750887241483-f56eacfda779?w=800&h=600&fit=crop&auto=format&q=80"
+              alt="Das Team von Elektro Wiegele aus Lautenbach"
+              width="800" height="600" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kennzahlen-Balken -->
+    <div class="stats-bar" aria-label="Unsere Kennzahlen">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- TODO: Zahlen mit dem Betrieb abstimmen -->
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="500" data-suffix="+">500+</div>
+            <div class="stat-item__label">abgeschlossene Projekte</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="2">2</div>
+            <div class="stat-item__label">Generationen Familienhandwerk</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__number" data-from="0" data-target="1">1</div>
+            <div class="stat-item__label">Elektrotechnikermeister im Betrieb</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <section class="section section--alt" aria-label="Team">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Die Menschen hinter dem Betrieb</span>
+          <h3 class="section__title">Unser Team</h3>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- TODO: Porträtfoto von Patrick Wiegele einsetzen (300 × 300 px) -->
+          <div class="team-card">
+            <img class="team-card__photo"
+              src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20150%20150%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23E2E2E2%22/%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%2258%22%20r%3D%2230%22%20fill%3D%22%23B8B8B8%22/%3E%3Cpath%20d%3D%22M20%20145%20C20%20105%2050%2088%2075%2088%20C100%2088%20130%20105%20130%20145%20Z%22%20fill%3D%22%23B8B8B8%22/%3E%3C/svg%3E"
+              alt="Porträtfoto Patrick Wiegele"
+              width="300" height="300" loading="lazy" />
+            <h4 class="team-card__name">Patrick Wiegele</h4>
+            <p class="team-card__role">Inhaber &amp; Elektrotechnikermeister</p>
+          </div>
+
+          <!-- TODO: Weitere Teammitglieder mit echten Namen und Fotos ergänzen -->
+          <div class="team-card">
+            <img class="team-card__photo"
+              src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20150%20150%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23E2E2E2%22/%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%2258%22%20r%3D%2230%22%20fill%3D%22%23B8B8B8%22/%3E%3Cpath%20d%3D%22M20%20145%20C20%20105%2050%2088%2075%2088%20C100%2088%20130%20105%20130%20145%20Z%22%20fill%3D%22%23B8B8B8%22/%3E%3C/svg%3E"
+              alt="Teammitglied Elektro Wiegele"
+              width="300" height="300" loading="lazy" />
+            <h4 class="team-card__name"><!-- TODO: Name einsetzen --></h4>
+            <p class="team-card__role"><!-- TODO: Rolle einsetzen --></p>
+          </div>
+
+          <div class="team-card">
+            <img class="team-card__photo"
+              src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20150%20150%22%3E%3Crect%20width%3D%22150%22%20height%3D%22150%22%20fill%3D%22%23E2E2E2%22/%3E%3Ccircle%20cx%3D%2275%22%20cy%3D%2258%22%20r%3D%2230%22%20fill%3D%22%23B8B8B8%22/%3E%3Cpath%20d%3D%22M20%20145%20C20%20105%2050%2088%2075%2088%20C100%2088%20130%20105%20130%20145%20Z%22%20fill%3D%22%23B8B8B8%22/%3E%3C/svg%3E"
+              alt="Teammitglied Elektro Wiegele"
+              width="300" height="300" loading="lazy" />
+            <h4 class="team-card__name"><!-- TODO: Name einsetzen --></h4>
+            <p class="team-card__role"><!-- TODO: Rolle einsetzen --></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="wave-divider" style="background:#E8EFF8;" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C320,0 480,60 720,30 C960,0 1120,60 1440,30 L1440,60 L0,60 Z" fill="#F6F9FD"/></svg></div>
+
+    <!-- ============================================================
+         5. AKTUELLES
+         ============================================================ -->
+    <section class="section" id="aktuelles">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Neuigkeiten &amp; Projekte</span>
+          <h2 class="section__title">Aktuelles aus dem Betrieb</h2>
+          <p class="section__lead">
+            Einblicke in unsere Arbeit, abgeschlossene Projekte und Wissenswertes
+            rund um Elektrotechnik und erneuerbare Energien – direkt aus dem Renchtal.
+          </p>
+        </div>
+
+        <div class="news-grid">
+
+          <!-- TODO: News-Bilder durch echte Projektfotos austauschen (800 × 500 px) -->
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="https://images.unsplash.com/photo-1745187946672-2c1d8cf26a2b?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Fertig montierte Photovoltaikanlage auf Einfamilienhaus"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2026-04-10">10. April 2026</time>
+                <span class="news-card__cat">Photovoltaik</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Neue PV-Anlage in Lautenbach erfolgreich in Betrieb genommen</a></h3>
+              <p class="news-card__text">
+                Eine 9,8-kWp-Photovoltaikanlage mit Speicher haben wir für eine Familie
+                in Lautenbach vollständig installiert – von der Anmeldung beim Netzbetreiber
+                bis zur Übergabe inklusive Einweisung in die Steuerungssoftware.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="https://images.unsplash.com/photo-1758101755915-462eddc23f57?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Elektriker führt E-CHECK in einem Haushalt durch"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2026-02-18">18. Februar 2026</time>
+                <span class="news-card__cat">Sicherheit</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">E-CHECK: Warum jedes Haus eine Prüfung verdient</a></h3>
+              <p class="news-card__text">
+                Fast ein Drittel aller Wohnungsbrände geht auf fehlerhafte Elektroinstallationen
+                zurück. Mit dem E-CHECK erkennen wir Mängel, bevor sie gefährlich werden –
+                jetzt auch mit spezieller Prüfung für Photovoltaikanlagen.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img class="news-card__image"
+                src="https://images.unsplash.com/photo-1776860150272-653efc74193c?w=800&h=500&fit=crop&auto=format&q=80"
+                alt="Wärmepumpe außen an Hauswand installiert"
+                width="800" height="500" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <time class="news-card__date" datetime="2026-01-07">7. Januar 2026</time>
+                <span class="news-card__cat">Energieberatung</span>
+              </div>
+              <h3 class="news-card__title"><a href="#aktuelles">Wärmepumpe + PV: Das perfekte Duo für Energieautarkie</a></h3>
+              <p class="news-card__text">
+                Wer Wärmepumpe und Photovoltaikanlage kombiniert, heizt mit selbst erzeugtem
+                Strom und reduziert die Betriebskosten erheblich. Wir beraten Sie und
+                übernehmen die komplette Installation aus einer Hand.
+              </p>
+              <a href="#aktuelles" class="news-card__link">
+                Mehr lesen
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. KONTAKT
+         ============================================================ -->
+    <section class="section contact-section" id="kontakt">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Nehmen Sie Kontakt auf</span>
+          <h2 class="section__title">Wir freuen uns auf Ihr Projekt</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- KONTAKTFORMULAR -->
+          <!-- TODO: Formspree-Endpunkt in js/main.js einbauen -->
+          <form class="contact-form" id="kontaktformular" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">Ihr Name <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="name" name="name" required autocomplete="name" placeholder="Max Mustermann" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" required autocomplete="email" placeholder="max@beispiel.de" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon <span style="font-weight:400;color:var(--color-text-muted);">(optional)</span></label>
+              <input class="form-control" type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="07802 …" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="betreff">Betreff</label>
+              <input class="form-control" type="text" id="betreff" name="betreff" placeholder="z. B. Photovoltaik – Neubau" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nachricht">Ihre Nachricht <span aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="nachricht" name="nachricht" required placeholder="Beschreiben Sie kurz Ihr Vorhaben …"></textarea>
+            </div>
+            <!-- TODO: Datenschutz-Link auf echte Datenschutzseite setzen -->
+            <p style="font-size:0.78rem;color:var(--color-text-muted);margin-bottom:1rem;line-height:1.5;">
+              Mit dem Absenden stimmen Sie unserer
+              <a href="#" style="color:var(--color-secondary);text-decoration:underline;">Datenschutzerklärung</a> zu.
+            </p>
+            <button type="submit" class="btn btn--primary btn--lg">Nachricht absenden</button>
+          </form>
+
+          <!-- KONTAKTINFORMATIONEN -->
+          <div class="contact-info">
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Adresse</h3>
+                <address class="contact-info-card__text">
+                  Elektro Wiegele<br>
+                  Vorder-Winterbach 35<br>
+                  77794 Lautenbach
+                </address>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Telefon &amp; E-Mail</h3>
+                <p class="contact-info-card__text">
+                  <a href="tel:+4978024671">07802 4671</a><br>
+                  <!-- TODO: E-Mail-Adresse einsetzen -->
+                  <span style="color:var(--color-text-muted);">E-Mail auf Anfrage</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <svg class="contact-info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <h3 class="contact-info-card__title">Öffnungszeiten</h3>
+                <!-- TODO: Echte Öffnungszeiten beim Betrieb erfragen und einsetzen -->
+                <dl class="hours-list">
+                  <dt>Mo – Fr</dt><dd>07:00 – 17:00 Uhr</dd>
+                  <dt>Samstag</dt><dd>Nach Vereinbarung</dd>
+                  <dt>Sonntag</dt><dd>Geschlossen</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div>
+        <div class="footer-brand__logo">
+          <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="8" fill="#1B3A6B"/>
+            <text x="22" y="29" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#F5C518">EW</text>
+          </svg>
+          <span class="footer-brand__name">Elektro Wiegele</span>
+        </div>
+        <p class="footer-brand__desc">
+          Familiengeführter Elektrobetrieb in Lautenbach im Renchtal.
+          Innungsfachbetrieb, E-CHECK-zertifiziert und Meisterbetrieb –
+          für sichere Elektroinstallationen, Photovoltaik und Wärmepumpen.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Navigation</h3>
+        <nav aria-label="Footer-Navigation">
+          <ul class="footer-nav__list">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="#referenzen">Referenzen</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#aktuelles">Aktuelles</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Kontakt</h3>
+        <address>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Vorder-Winterbach 35<br>77794 Lautenbach</span>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.46-1.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <a href="tel:+4978024671">07802 4671</a>
+          </div>
+          <div class="footer-contact__item">
+            <svg class="footer-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <!-- TODO: E-Mail-Adresse einsetzen -->
+            <span style="color:rgba(255,255,255,0.42);">E-Mail auf Anfrage</span>
+          </div>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer-col__title">Öffnungszeiten</h3>
+        <!-- TODO: Echte Öffnungszeiten ergänzen -->
+        <dl class="footer-hours">
+          <dt>Mo – Fr</dt><dd>07:00 – 17:00 Uhr</dd>
+          <dt>Samstag</dt><dd>Nach Vereinbarung</dd>
+          <dt>Sonntag</dt><dd>Geschlossen</dd>
+        </dl>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>&copy; 2026 Elektro Wiegele, Lautenbach. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom__links">
+          <!-- TODO: Impressum & Datenschutz auf echte Seiten verlinken -->
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
