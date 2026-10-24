@@ -1,6 +1,5 @@
 # Demo-Hosting: jede Site liegt unter max-utils.com/demo/<id>/ hinter Basic-Auth (User "demo").
-# Neue Site: Ordner im Repo-Root, eine import-Zeile unten, in Coolify die Variable
-# DEMO_HASH_<NAME> als literal anlegen (bcrypt aus "caddy hash-password").
+# Wird von deploy/sync.sh zur Caddyfile ergaenzt (eine import-Zeile je Site aus sites.tsv).
 {
 	admin off
 	auto_https off
@@ -22,8 +21,75 @@
 }
 
 :80 {
-	import site 86fc9646 destill-tech {$DEMO_HASH_DESTILL_TECH}
-	import site 109b65a7 generic {$DEMO_HASH_GENERIC}
+	import site daa0c9f3 abelein-gebaeudereinigung-oensbach {$DEMO_HASH_ABELEIN_GEBAEUDEREINIGUNG_OENSBACH}
+	import site cdf93821 activa-physiotherapie-freistett {$DEMO_HASH_ACTIVA_PHYSIOTHERAPIE_FREISTETT}
+	import site 205e5d1a agrarteam-renchtal {$DEMO_HASH_AGRARTEAM_RENCHTAL}
+	import site a59b02fe allseko {$DEMO_HASH_ALLSEKO}
+	import site 3413775f andrisano-bolley-landschaftsgaertner-gengenbach {$DEMO_HASH_ANDRISANO_BOLLEY_LANDSCHAFTSGAERTNER_GENGENBACH}
+	import site d12c66f8 armbruster-zimmerei-haslach {$DEMO_HASH_ARMBRUSTER_ZIMMEREI_HASLACH}
+	import site 2fc70b02 autoglanzcenter-oberkirch {$DEMO_HASH_AUTOGLANZCENTER_OBERKIRCH}
+	import site 29b936ce baer-friseursalon-oensbach {$DEMO_HASH_BAER_FRISEURSALON_OENSBACH}
+	import site 6b0a57d5 bene-environmental {$DEMO_HASH_BENE_ENVIRONMENTAL}
+	import site ffabe4d6 blumen-dinger {$DEMO_HASH_BLUMEN_DINGER}
+	import site 0bf147dd boschert-garten-landschaftsbau-rheinbischofsheim {$DEMO_HASH_BOSCHERT_GARTEN_LANDSCHAFTSBAU_RHEINBISCHOFSHEIM}
+	import site 65501baa brandstetter-montage-service {$DEMO_HASH_BRANDSTETTER_MONTAGE_SERVICE}
+	import site 427f59a6 buecherinsel {$DEMO_HASH_BUECHERINSEL}
+	import site 9cab5a69 buehler-schlosserei-hornberg {$DEMO_HASH_BUEHLER_SCHLOSSEREI_HORNBERG}
+	import site 8d801d7b chematec {$DEMO_HASH_CHEMATEC}
+	import site 6cbcbc9c claudias-haarstudio-freistett {$DEMO_HASH_CLAUDIAS_HAARSTUDIO_FREISTETT}
+	import site 42f948d8 crema-gelato {$DEMO_HASH_CREMA_GELATO}
+	import site 7db9c753 dd-personenbevoerderung {$DEMO_HASH_DD_PERSONENBEVOERDERUNG}
+	import site d0e72438 deckert-zimmereibetrieb-biberach {$DEMO_HASH_DECKERT_ZIMMEREIBETRIEB_BIBERACH}
+	import site 2ff6a2e0 deko-studio-bruder {$DEMO_HASH_DEKO_STUDIO_BRUDER}
+	import site 4cd6a5e1 dekort-langeraar-krankengymnastik-haslach {$DEMO_HASH_DEKORT_LANGERAAR_KRANKENGYMNASTIK_HASLACH}
+	import site c5eb47e3 derkleinefrisoer-memprechtshofen {$DEMO_HASH_DERKLEINEFRISOER_MEMPRECHTSHOFEN}
+	import site 658e9cde destill-tech-gmbh {$DEMO_HASH_DESTILL_TECH_GMBH}
+	import site 0a057819 doninger-maschinenbau-und-cnc {$DEMO_HASH_DONINGER_MASCHINENBAU_UND_CNC}
+	import site 68c67422 drucktechnik-weber {$DEMO_HASH_DRUCKTECHNIK_WEBER}
+	import site f228ad16 efinger-zimmerei-hofstetten {$DEMO_HASH_EFINGER_ZIMMEREI_HOFSTETTEN}
+	import site e30507b3 elektro-wiegele {$DEMO_HASH_ELEKTRO_WIEGELE}
+	import site dec0e106 ems-brunner {$DEMO_HASH_EMS_BRUNNER}
+	import site 3c95bcf8 facon-friseur-fautenbach {$DEMO_HASH_FACON_FRISEUR_FAUTENBACH}
+	import site fad4a561 fischer-dachdecker-oberwolfach {$DEMO_HASH_FISCHER_DACHDECKER_OBERWOLFACH}
+	import site 0fc5424c giovannas-haarstudio-wagshurst {$DEMO_HASH_GIOVANNAS_HAARSTUDIO_WAGSHURST}
+	import site 5579bd77 grillstube-rose {$DEMO_HASH_GRILLSTUBE_ROSE}
+	import site 79565b58 guenter-mueller-bautechnik {$DEMO_HASH_GUENTER_MUELLER_BAUTECHNIK}
+	import site 4219d2bb heitzmann-volz-metallbau-achern {$DEMO_HASH_HEITZMANN_VOLZ_METALLBAU_ACHERN}
+	import site 8bc2df6b hiller-elektrotechnik-hausach {$DEMO_HASH_HILLER_ELEKTROTECHNIK_HAUSACH}
+	import site f19d94cd horn-kfz-werkstatt-oberwolfach {$DEMO_HASH_HORN_KFZ_WERKSTATT_OBERWOLFACH}
+	import site d655761b ht-kommunikation {$DEMO_HASH_HT_KOMMUNIKATION}
+	import site 2f132da7 huber-malermeister-wagshurst {$DEMO_HASH_HUBER_MALERMEISTER_WAGSHURST}
+	import site afece08d huber-reisen {$DEMO_HASH_HUBER_REISEN}
+	import site b9510d29 keck-galabau-freistett {$DEMO_HASH_KECK_GALABAU_FREISTETT}
+	import site bd6eff0f klotter-malermeister-freistett {$DEMO_HASH_KLOTTER_MALERMEISTER_FREISTETT}
+	import site a535876f klumpp-montage-service {$DEMO_HASH_KLUMPP_MONTAGE_SERVICE}
+	import site 8bf21abf koehler-umzuege {$DEMO_HASH_KOEHLER_UMZUEGE}
+	import site 97eb0b30 kraemer-elektrotechnik-hausach {$DEMO_HASH_KRAEMER_ELEKTROTECHNIK_HAUSACH}
+	import site 21959bf4 kran-service-magnus {$DEMO_HASH_KRAN_SERVICE_MAGNUS}
+	import site 5d55e5c5 lasch-kfz-werkstatt-linx {$DEMO_HASH_LASCH_KFZ_WERKSTATT_LINX}
+	import site 969522bc link-garten-landschaftsbau-zell {$DEMO_HASH_LINK_GARTEN_LANDSCHAFTSBAU_ZELL}
+	import site ac2facc9 mader-heizung-sanitaer-hornberg {$DEMO_HASH_MADER_HEIZUNG_SANITAER_HORNBERG}
+	import site 98d9e931 mager-malerfachbetrieb-linx {$DEMO_HASH_MAGER_MALERFACHBETRIEB_LINX}
+	import site dd7751e6 maierklaus-holzbau {$DEMO_HASH_MAIERKLAUS_HOLZBAU}
+	import site 6a534a78 maile-friseursalon-nordrach {$DEMO_HASH_MAILE_FRISEURSALON_NORDRACH}
+	import site 542200ef metallbau-languth {$DEMO_HASH_METALLBAU_LANGUTH}
+	import site 03c7c81f mulag {$DEMO_HASH_MULAG}
+	import site 769804ff neumaier-schneiderei-haslach {$DEMO_HASH_NEUMAIER_SCHNEIDEREI_HASLACH}
+	import site 59d7e7da panter-holzbau {$DEMO_HASH_PANTER_HOLZBAU}
+	import site 8efac42e pauli-ruck-dachdecker-gengenbach {$DEMO_HASH_PAULI_RUCK_DACHDECKER_GENGENBACH}
+	import site 3091cdce pfalzgut-frischdienst {$DEMO_HASH_PFALZGUT_FRISCHDIENST}
+	import site 1e288510 planungsbuero-ruediger-kretschmer {$DEMO_HASH_PLANUNGSBUERO_RUEDIGER_KRETSCHMER}
+	import site 6f77f94a rechtsanwaelte-wortberg {$DEMO_HASH_RECHTSANWAELTE_WORTBERG}
+	import site c0f4c778 sb-waschpark-oberkirch {$DEMO_HASH_SB_WASCHPARK_OBERKIRCH}
+	import site ba734456 schilli-malermeister-biberach {$DEMO_HASH_SCHILLI_MALERMEISTER_BIBERACH}
+	import site 5bf84237 schmid-landmetzgerei-oberwolfach {$DEMO_HASH_SCHMID_LANDMETZGEREI_OBERWOLFACH}
+	import site 29874573 schmider-zimmerei-wolfach {$DEMO_HASH_SCHMIDER_ZIMMEREI_WOLFACH}
+	import site cb1e865f schwendemann-elektroplanung-haslach {$DEMO_HASH_SCHWENDEMANN_ELEKTROPLANUNG_HASLACH}
+	import site 877745f1 setac {$DEMO_HASH_SETAC}
+	import site 44a3e36b sperlich-gerhard-malergeschaeft {$DEMO_HASH_SPERLICH_GERHARD_MALERGESCHAEFT}
+	import site bc53ba6f vorlage-basis {$DEMO_HASH_VORLAGE_BASIS}
+	import site 3c213570 vorlage-buchung {$DEMO_HASH_VORLAGE_BUCHUNG}
+	import site 8245e0ce zenelji-trockenbau-rheinbischofsheim {$DEMO_HASH_ZENELJI_TROCKENBAU_RHEINBISCHOFSHEIM}
 
 	handle {
 		respond "not found" 404

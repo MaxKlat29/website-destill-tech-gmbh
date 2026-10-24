@@ -1,3 +1,3 @@
 FROM caddy:2.8.4-alpine
 COPY deploy/Caddyfile /etc/caddy/Caddyfile
-COPY . /srv/
+COPY sites /srv/
