@@ -1,0 +1,31 @@
+# Demo-Hosting: jede Site liegt unter max-utils.com/demo/<id>/ hinter Basic-Auth (User "demo").
+# Neue Site: Ordner im Repo-Root, eine import-Zeile unten, in Coolify die Variable
+# DEMO_HASH_<NAME> als literal anlegen (bcrypt aus "caddy hash-password").
+{
+	admin off
+	auto_https off
+}
+
+(site) {
+	@site_{args[0]} path /demo/{args[0]} /demo/{args[0]}/*
+	handle @site_{args[0]} {
+		basic_auth {
+			demo {args[2]}
+		}
+		header X-Robots-Tag "noindex, nofollow"
+		redir /demo/{args[0]} /demo/{args[0]}/ 308
+		handle_path /demo/{args[0]}/* {
+			root * /srv/{args[1]}
+			file_server
+		}
+	}
+}
+
+:80 {
+	import site 86fc9646 destill-tech {$DEMO_HASH_DESTILL_TECH}
+	import site 109b65a7 generic {$DEMO_HASH_GENERIC}
+
+	handle {
+		respond "not found" 404
+	}
+}
